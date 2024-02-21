@@ -2,11 +2,8 @@
     .contenedorGralPresentacion{
         width: 100%;
         height: auto;
-        background-image: url('/public/main.svg');
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat; /* Agregado para asegurar que el fondo no se repita */
         background-color: #030014;
+        padding-top: 350px;
         .contenedorBackground{
             width: 100%;
             height: 100vh;
