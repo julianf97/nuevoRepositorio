@@ -83,13 +83,14 @@
                 
             }
             .contenedorTituloPresentacion{
-                width: 100%;
+                width: 80%;
                 height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
                 margin-top: 20px;
+                border: solid 1px red;
                 .theBest {
                     color: #00c4ff
                 }
