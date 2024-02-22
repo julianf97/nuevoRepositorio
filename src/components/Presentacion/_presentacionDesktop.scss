@@ -54,6 +54,8 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
+                padding-top: 40px ;
+                border: solid 1px red;
                 .cardFullStack{
                     padding: 2px 15px; /* px-[15px] py-[6px] */
                     border: solid 1px #7042f88b; /* border border-[#7042f88b] */
@@ -71,6 +73,7 @@
                     transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
                     align-items: center !important;
                     justify-content: center !important;
+                    margin-top: 30px;
                     .text {
                         color: #fff;
                         font-size: 1rem;
@@ -100,7 +103,10 @@
                 h1{
                     color: #fff;
                     font-weight: 700;
-                    font-size: 48px;
+                    font-size: 3rem;
+                    @media (min-width: 1900px) { 
+                        font-size: 4.5rem;
+                    }
                     line-height: 1.5; /* Ajusta el espacio entre líneas según tus preferencias */
                 }
             }
@@ -112,6 +118,9 @@
                     color: #7c8494;
                     text-align: start;
                     font-weight: 600;
+                    @media (min-width: 1900px) { 
+                        font-size: 2rem;
+                    }
                     font-size: 1.2rem;
                 }
                 .contenedorBotones{
@@ -124,6 +133,11 @@
                     padding-bottom: 20px;
                     margin-left: -10px;
                     .btnResumen {
+                        @media (min-width: 1900px) { 
+                            width: 140px;
+                            height: 45px;
+                            font-size: 1.4rem;
+                        }
                         width: 100px;
                         height: 35px;
                         padding-left: 20px;
