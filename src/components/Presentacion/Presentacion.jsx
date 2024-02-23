@@ -25,6 +25,8 @@ export default function Presentacion() {
   };
 
   return (
+    <>
+    <div className="backgroundContainer"></div>
     <div className="contenedorGralPresentacion">
       <div className="contenedorAbsolutoVideo">
         <video
@@ -113,5 +115,6 @@ export default function Presentacion() {
         </div>
       </div>
     </div>
+    </>
   );
 }

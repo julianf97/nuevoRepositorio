@@ -3,6 +3,7 @@ import { Divide as Hamburger } from "hamburger-react";
 import { motion, useAnimation } from "framer-motion";
 import logo from "../../../public/letrasLogo.png";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
+import { Link } from "react-router-dom";
 import "./_navbarMobile.scss";
 import "./_navbarIpad.scss";
 import "./_navbarDesktop.scss";
@@ -76,12 +77,36 @@ export default function Navbar() {
         </div>
         <div className="contenedorNavDesktop">
           <div className="internoNavDesktop">
-            <ul>
-              <li>Home</li>
-              <li>Blog</li>
-              <li>Proyects</li>
-              <li>About</li>
-            </ul>
+          <ul>
+        <motion.li 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 1 }}
+        >
+          <Link to={"/portfolio"}>Home</Link>
+        </motion.li>
+        <motion.li 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 1 }}
+        >
+          <Link to={"/proyects"}>Projects</Link>
+        </motion.li>
+        <motion.li 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 1 }}
+        >
+          <Link to={"/about"}>Blog</Link>
+        </motion.li>
+        <motion.li 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 1 }}
+        >
+          <Link to={"/blog"}>About</Link>
+        </motion.li>
+      </ul>
           </div>
         </div>
         <div className="contenedorLenguaje">

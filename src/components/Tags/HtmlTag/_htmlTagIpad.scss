@@ -1,0 +1,17 @@
+@media only screen and (min-width: 600px) and (max-width: 1025px) { 
+    .htmlTag{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        padding: 3px 13px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #DD4B25;
+        width: 40px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
