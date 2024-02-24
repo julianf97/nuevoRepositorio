@@ -27,7 +27,7 @@
             }
         }
         .contenedorInterior{
-            width: 95%;
+            width: 94%;
             height: auto;
             padding-top: 50px;
             max-width: 1480px; // Establece un máximo de ancho en píxeles
@@ -170,7 +170,7 @@
                 height: auto;
                 text-align: center;
                 img{
-                    margin-left: 20px;
+                    margin-left: 100px;
                     @media (min-width: 1900px) { 
                         width: 80%;
                         margin-left: 80px;
