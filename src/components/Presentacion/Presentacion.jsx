@@ -27,7 +27,7 @@ export default function Presentacion() {
   return (
     <>
     <div className="backgroundContainer"></div>
-    <div className="contenedorGralPresentacion">
+    <div id="home" className="contenedorGralPresentacion">
       <div className="contenedorAbsolutoVideo">
         <video
           src={video}

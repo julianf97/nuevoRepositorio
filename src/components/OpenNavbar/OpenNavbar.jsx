@@ -3,10 +3,9 @@ import "./_openNavbar.scss";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
 import { useEffect } from "react";
 import { useContext } from "react";
-import { Link } from "react-router-dom"
 
 export default function OpenNavbar() {
-  const { isMenuOpen } = useContext(OpenNavbarContext);
+  const { isMenuOpen, handleExitNavbar } = useContext(OpenNavbarContext);
 
   const handleScrollTo = (elementId) => {
     const element = document.getElementById(elementId);
@@ -21,6 +20,8 @@ export default function OpenNavbar() {
         top: offsetPosition,
         behavior: "smooth"
       });
+
+      handleExitNavbar()
     }
   };
 
@@ -51,18 +52,10 @@ export default function OpenNavbar() {
         </div>
         <nav className="navegadorNavbarOpen">
           <ul className="contenedorBotones">
-            <Link to="/portfolio">
-              <li className="btnNav">Home</li>
-            </Link>
-            <Link to="/proyects">
-              <li className="btnNav">Proyects</li>
-            </Link>
-            <Link to="/about">
-              <li className="btnNav">About</li>
-            </Link>
-            <Link to="/">
-              <li className="btnNav">Blog</li>
-            </Link>
+            <li onClick={ () => handleScrollTo("home")} className="btnNav">Home</li>
+            <li onClick={ () => handleScrollTo("projects")} className="btnNav">Proyects</li>
+            <li onClick={ () => handleScrollTo("blog")} className="btnNav">Blog</li>
+            <li onClick={ () => handleScrollTo("about")} className="btnNav">About</li>
           </ul>
         </nav>
       </div>
