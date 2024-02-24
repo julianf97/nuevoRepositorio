@@ -1,7 +1,7 @@
 import "./_projectsDesktop.scss"
 import "./_projectsIpad.scss"
 import "./_projectsMobile.scss"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import ProyectCard from "../ProjectCard/ProyectCard";
@@ -27,11 +27,22 @@ export default function Projects() {
     const [filter, setFilter] = useState('All');
     const [showMore, setShowMore] = useState(false);
     const [projectsToShow, setProjectsToShow] = useState(6); // Mostrar inicialmente 6 proyectos
+    const [searchResultsFound, setSearchResultsFound] = useState(true); // Estado para controlar si se encontraron resultados
+
+    useEffect(() => {
+        // Comprobar si se encontraron resultados después de la búsqueda
+        if (arrayProjectsPage.some(project => project.title.toLowerCase().includes(searchTerm.toLowerCase()))) {
+            setSearchResultsFound(true);
+        } else {
+            setSearchResultsFound(false);
+            setShowMore(true);
+        }
+    }, [searchTerm]);
 
     const handleFilterChange = (selectedFilter) => {
         setFilter(selectedFilter);
-        setShowMore(true)
-        setProjectsToShow(projectsToShow + 3); // Reiniciar el contador de proyectos mostrados al cambiar el filtro
+        setShowMore(true);
+        setProjectsToShow(6); // Reiniciar el contador de proyectos mostrados al cambiar el filtro
     };
 
     const handleSearchChange = (event) => {
@@ -131,6 +142,9 @@ export default function Projects() {
                             })}
                         />
                     ))}
+                {!searchResultsFound && searchTerm !== '' && ( // Mostrar el mensaje de no se encontraron proyectos
+                    <div className="noResultsMessage">No se ha encontrado ningún proyecto.</div>
+                )}
             </div>
             {!showMore && (
                 <div className="contenedorBtnVerMas">
