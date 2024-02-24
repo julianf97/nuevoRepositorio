@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 10px;
         margin-top: 20px !important;
         transition: 1s;
         .etiquetaLink{
@@ -29,8 +29,7 @@
         background-color: #0c0728; /* Color de fondo */
         .imgProyect {
             width: 100%; /* Ancho del contenedor */
-            height: 50%; /* Altura del contenedor */
-        
+            height: 180px; /* Altura del contenedor */
             position: relative; /* Establecer posición relativa */
             top: 0; /* Posición inicial en la parte superior */
         
@@ -42,7 +41,7 @@
         }
         .titleProyectContainer{
             width: 100%;
-            height: auto;
+            height: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -50,7 +49,7 @@
             padding-top: 20px;
             h3{
                 color: #fff;
-                font-size: 42px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 margin-top: 10px;
             }
@@ -65,8 +64,8 @@
             margin-top: 10px;
             padding-bottom: 15px;
             .btnResumen {
-                width: 80px;
-                height: 40px;
+                width: 60px;
+                height: 30px;
                 animation: slideleftT4 0.4s ease-in-out;
                 padding-left: 20px;
                 padding-right: 20px;
@@ -80,7 +79,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 1.4rem;
+                font-size: 1rem;
                 &:hover {
                     background: linear-gradient(180deg, rgba(60,8,126,0), rgba(60,8,126,.6)), rgba(113,47,255,.6); /* Color más claro en el hover */
                     transform: scale(1.05);
