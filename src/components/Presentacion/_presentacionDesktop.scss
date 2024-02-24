@@ -4,10 +4,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 20px;
         padding-bottom: 200px;
+        padding-top: 80px;
         @media (min-width: 1900px) { 
             padding-top: 110px;
+            padding-bottom: 300px;
         }
         .contenedorAbsolutoVideo{
             width: 100%;
@@ -25,10 +27,10 @@
             }
         }
         .contenedorInterior{
-            width: 80%;
+            width: 95%;
             height: auto;
             padding-top: 50px;
-            max-width: 1350px; // Establece un máximo de ancho en píxeles
+            max-width: 1480px; // Establece un máximo de ancho en píxeles
             display: flex;
             justify-content: center;
             align-items: center;
@@ -169,8 +171,13 @@
                 text-align: center;
                 img{
                     margin-left: 20px;
-                    width: 80%;
-                    height: 80%;
+                    @media (min-width: 1900px) { 
+                        width: 80%;
+                        margin-left: 80px;
+                        height: 80%;
+                    }
+                    width: 70%;
+                    height: 70%;
                     object-fit: cover 
                 }
             }

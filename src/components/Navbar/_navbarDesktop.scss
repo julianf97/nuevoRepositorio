@@ -17,9 +17,9 @@
 
       .internoNavbarDesktop{
         height: 100%; // Ocupa toda la altura del contenedor padre
-        width: 85%; // Ocupa todo el ancho del contenedor padre por defecto
+        width: 99% !important; // Ocupa todo el ancho del contenedor padre por defecto
         display: flex;
-        max-width: 1140px; // Establece un máximo de ancho en píxeles
+        max-width: 1540px; // Establece un máximo de ancho en píxeles
         margin: 0 auto; // Centrado horizontal
         .contenedorLogo{
           width: 20%;
@@ -45,7 +45,7 @@
         .contenedorLenguaje{
           width: 20%;
           display: flex;
-          justify-content: start;
+          justify-content: center;
           align-items: center;
           span{
             color: #fff;
@@ -53,7 +53,7 @@
             font-weight: 600;
             cursor: pointer;
             user-select: none;
-            margin-left: 80px;
+            margin-left: 70px;
           }
         }
         .contenedorNavDesktop{
