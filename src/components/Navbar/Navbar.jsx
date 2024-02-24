@@ -56,7 +56,7 @@ export default function Navbar() {
         behavior: "smooth"
       });
     }
-};
+  };
 
   return (
     <motion.nav

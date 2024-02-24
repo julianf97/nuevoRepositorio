@@ -21,6 +21,11 @@
             width: 390px; /* Ancho específico para pantallas de al menos 1250px de ancho */
             height: 440px; /* Altura específica para pantallas de al menos 1250px de ancho */
         }
+
+        @media (min-width: 1900px) {
+            width: 450px !important; /* Ancho específico para pantallas de al menos 1250px de ancho */
+            height: 440px; /* Altura específica para pantallas de al menos 1250px de ancho */
+        }
     
         /* Otros estilos */
         border-radius: 14px; /* Borde redondeado de 14px */
@@ -52,6 +57,9 @@
                 font-size: 1.5rem;
                 font-weight: 700;
                 margin-top: 10px;
+                @media (min-width: 1900px) { 
+                    font-size: 1.8rem;
+                }
             }
         }
         .links{
@@ -80,6 +88,11 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 1rem;
+                @media (min-width: 1900px) {
+                    width: 80px;
+                    height: 30px;
+                    font-size: 1.2rem;
+                }
                 &:hover {
                     background: linear-gradient(180deg, rgba(60,8,126,0), rgba(60,8,126,.6)), rgba(113,47,255,.6); /* Color más claro en el hover */
                     transform: scale(1.05);

@@ -11,7 +11,7 @@ import coloCossyScreen from "../../public/screensProyect/screenColoCossy.png";
 export const arrayProjectsPage = [
   {
     id: "mercadoLibre",
-    title: "Desafío Técnico de Mercado Libre",
+    title: "Buscador Mercado Libre",
     titleENG: "Mercado Libre Technical Challenge",
     image: mercadoLibreScreen,
     deployLink: "https://julian-merc-libre.vercel.app/",

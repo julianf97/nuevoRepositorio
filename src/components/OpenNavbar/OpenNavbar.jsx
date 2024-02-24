@@ -8,6 +8,23 @@ import { Link } from "react-router-dom"
 export default function OpenNavbar() {
   const { isMenuOpen } = useContext(OpenNavbarContext);
 
+  const handleScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const offset = -5; // Ajuste de compensación de desplazamiento
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
+
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('menu-open');
