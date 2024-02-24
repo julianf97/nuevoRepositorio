@@ -57,20 +57,40 @@ export default function Projects() {
                 <h4>Proyectos Destacados</h4>
             </div>
             <div className="contenedorBuscador">
+              <div className="internoBuscador">
                 <div className='buscador'>
-                    <FontAwesomeIcon className='iconLupa' icon={ faMagnifyingGlass }></FontAwesomeIcon>
-                    <input 
-                        type="text" 
-                        placeholder='Search' 
-                        value={searchTerm}
-                        onChange={handleSearchChange}
-                    />
+                  <FontAwesomeIcon className='iconLupa' icon={ faMagnifyingGlass }></FontAwesomeIcon>
+                  <input 
+                    type="text" 
+                    placeholder='Search' 
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                  />
                 </div>
+              </div>
+            </div>
+            <div className="contenedorBuscadorDesktop">
+              <div className="internoBuscador">
+                <div className="contenedorTituloDesktop">
+                  <h3>Proyectos</h3>
+                </div>
+                <div className='buscador'>
+                  <FontAwesomeIcon className='iconLupa' icon={ faMagnifyingGlass }></FontAwesomeIcon>
+                  <input 
+                    type="text" 
+                    placeholder='Search' 
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                  />
+                </div>
+              </div>
             </div>
             <div className="contenedorFiltro">
-                <button onClick={() => handleFilterChange('All')}>All</button>
+              <div className="internoFiltro">
+              <button onClick={() => handleFilterChange('All')}>All</button>
                 <button onClick={() => handleFilterChange('Frontend')}>Front End</button>
                 <button onClick={() => handleFilterChange('Fullstack')}>Full Stack</button>
+              </div>
             </div>
             <div className="contenedorProyects">
             {arrayProjectsPage.filter(project => {

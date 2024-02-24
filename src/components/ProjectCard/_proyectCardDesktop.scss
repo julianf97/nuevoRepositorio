@@ -46,9 +46,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-bottom: 30px;
+            padding-top: 20px;
             h3{
                 color: #fff;
-                font-size: 32px;
+                font-size: 42px;
                 font-weight: 700;
                 margin-top: 10px;
             }
@@ -61,9 +63,10 @@
             align-items: center;
             margin-left: -15px;
             margin-top: 10px;
+            padding-bottom: 15px;
             .btnResumen {
-                width: 60px;
-                height: 30px;
+                width: 80px;
+                height: 40px;
                 animation: slideleftT4 0.4s ease-in-out;
                 padding-left: 20px;
                 padding-right: 20px;
@@ -77,7 +80,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 1rem;
+                font-size: 1.4rem;
                 &:hover {
                     background: linear-gradient(180deg, rgba(60,8,126,0), rgba(60,8,126,.6)), rgba(113,47,255,.6); /* Color más claro en el hover */
                     transform: scale(1.05);
@@ -131,5 +134,4 @@
         color: #ccc; /* Color de texto gris */
         font-size: 14px; /* Tamaño de fuente */
     }
-
 }
