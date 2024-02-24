@@ -3,7 +3,6 @@ import { Divide as Hamburger } from "hamburger-react";
 import { motion, useAnimation } from "framer-motion";
 import logo from "../../../public/letrasLogo.png";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
-import { Link } from "react-router-dom";
 import "./_navbarMobile.scss";
 import "./_navbarIpad.scss";
 import "./_navbarDesktop.scss";
@@ -43,6 +42,21 @@ export default function Navbar() {
     controls.start({ height: `${navbarHeight}vh`, transition: { duration: 0.2 } }); // Usamos vh en lugar de % para ajustarlo mejor a la ventana
   }, [scrollPosition, navbarHeight, controls]);
 
+  const handleScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const offset = -5; // Ajuste de compensación de desplazamiento
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+};
 
   return (
     <motion.nav
@@ -77,36 +91,40 @@ export default function Navbar() {
         </div>
         <div className="contenedorNavDesktop">
           <div className="internoNavDesktop">
-          <ul>
-        <motion.li 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-        >
-          <Link to={"/portfolio"}>Home</Link>
-        </motion.li>
-        <motion.li 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-        >
-          <Link to={"/proyects"}>Projects</Link>
-        </motion.li>
-        <motion.li 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-        >
-          <Link to={"/about"}>Blog</Link>
-        </motion.li>
-        <motion.li 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-        >
-          <Link to={"/blog"}>About</Link>
-        </motion.li>
-      </ul>
+            <ul>
+              <motion.li 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
+                onClick={() => handleScrollTo("portfolio")} // Scroll to Home
+              >
+                Home
+              </motion.li>
+              <motion.li 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
+                onClick={() => handleScrollTo("projects")} // Scroll to Projects
+              >
+                Projects
+              </motion.li>
+              <motion.li 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
+                onClick={() => handleScrollTo("about")} // Scroll to About
+              >
+                Blog
+              </motion.li>
+              <motion.li 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
+                onClick={() => handleScrollTo("blog")} // Scroll to Blog
+              >
+                About
+              </motion.li>
+            </ul>
           </div>
         </div>
         <div className="contenedorLenguaje">

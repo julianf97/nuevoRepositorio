@@ -49,7 +49,7 @@ export default function Projects() {
     };
 
     return (
-        <article className="contenedorGralProjects">
+        <article id="projects" className="contenedorGralProjects">
             <div className="contenedorTitulo">
                 <h3>Proyectos</h3>
             </div>

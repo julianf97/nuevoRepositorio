@@ -13,7 +13,7 @@ function App() {
         <main className='contenedorMainApp'>
           <Navbar/>
           <OpenNavbar/>
-          <Presentacion/>
+          <Presentacion />
           <Projects/>
         </main>
       </OpenNavbarProvider>
