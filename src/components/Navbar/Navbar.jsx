@@ -112,7 +112,7 @@ export default function Navbar() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleScrollTo("about")} // Scroll to About
+                onClick={() => handleScrollTo("blog")} // Scroll to About
               >
                 Blog
               </motion.li>
@@ -120,7 +120,7 @@ export default function Navbar() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleScrollTo("blog")} // Scroll to Blog
+                onClick={() => handleScrollTo("about")} // Scroll to Blog
               >
                 About
               </motion.li>

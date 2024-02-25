@@ -1,3 +1,117 @@
 @media (min-width: 1025px) { 
-
+    .contenedorBlog{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #060016;
+        .internoBlog{
+            width: 90%;
+            font-family: verdana, arial;
+            font-size: 10pt;
+            height: 95%;
+            background-color: #060016;
+            max-width: 1400px;
+            padding-left: 20px;
+            h3{
+                font-size: 30px;
+                color: #00c4ff;
+                font-weight: 700;
+                @media (min-width: 1900px) { 
+                    font-size: 60px;
+                }
+            }
+            h4{
+                font-size: 40px;
+                color: #ffffff;
+                font-weight: 600;
+                padding-top: 5px;
+                padding-bottom: 30px;
+                @media (min-width: 1900px) { 
+                    font-size: 70px;
+                }
+            }
+            .contenedorPosts{
+                width: 100%;
+                height: auto;
+                border-left: 1.5px dashed #747474;
+                margin-top: 20px;
+                margin-left: 5px;
+                padding-bottom: 20px;
+                .post{
+                    width: 98%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 10px;
+                    .internoPost{
+                        width: 90%;
+                        height: auto;
+                        border-bottom: 1.5px solid #414141;
+                        display: flex;
+                        flex-direction: column;
+                        overflow-wrap: break-word;
+                        padding-bottom: 10px;
+                        
+                        .tituloPost{
+                            color: #fff;
+                            font-size: 1.5rem;
+                            margin-top: 8px;
+                            user-select: none;
+                            transition: 0.3s;
+                            @media (min-width: 1900px) { 
+                                font-size: 2rem;
+                            }
+                        }
+                        .cardBlog{
+                            background: rgb(194, 245, 212);
+                            border-radius: 7px;
+                            width: 50px;
+                            height: 20px !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            @media (min-width: 1900px) { 
+                                width: 100px;
+                                height: 40px !important;
+                                font-size: 1.5rem;
+                                margin-bottom: 10px;
+                                font-weight: 500;
+                                color: #000;
+                            }
+                            
+                        }
+                        .cardYoutube{
+                            background: #FED7D7;
+                            border-radius: 7px;
+                            width: 70px;
+                            height: 20px !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            @media (min-width: 1900px) { 
+                                width: 130px;
+                                height: 40px !important;
+                                font-size: 1.5rem;
+                                margin-bottom: 10px;
+                                font-weight: 500;
+                                color: #000;
+                            }
+                            
+                        }
+                    }
+                    .internoPost:hover{
+                        cursor: pointer;
+                        .tituloPost{
+                            color: #00c4ff;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 }

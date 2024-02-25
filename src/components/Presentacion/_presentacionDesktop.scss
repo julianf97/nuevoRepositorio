@@ -53,6 +53,7 @@
                 padding-top: 50px ;
                 @media (min-width: 1900px) { 
                     padding-top: 150px;
+                    margin-top: 50px;
                 }
                 .cardFullStack{
                     padding: 6px 10px; /* px-[15px] py-[6px] */
@@ -72,6 +73,10 @@
                     align-items: center !important;
                     justify-content: center !important;
                     margin-top: 30px;
+                    @media only screen and (min-width: 1900px){ 
+                        width: 200px;
+                        height: 35px;
+                    }
                     .text {
                         color: #fff;
                         font-size: 1rem;
@@ -82,7 +87,9 @@
                         -webkit-background-clip: text;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
-        
+                        @media only screen and (min-width: 1900px){ 
+                            font-size: 1.3rem;
+                        }
                     }
                 }
                 
@@ -103,7 +110,7 @@
                     font-weight: 700;
                     font-size: 3rem;
                     @media (min-width: 1900px) { 
-                        font-size: 4.5rem;
+                        font-size: 5.5rem;
                     }
                     line-height: 1.5; /* Ajusta el espacio entre líneas según tus preferencias */
                 }
@@ -117,7 +124,7 @@
                     text-align: start;
                     font-weight: 600;
                     @media (min-width: 1900px) { 
-                        font-size: 2rem;
+                        font-size: 2.5rem;
                     }
                     font-size: 1.2rem;
                 }
@@ -132,9 +139,9 @@
                     margin-left: -10px;
                     .btnResumen {
                         @media (min-width: 1900px) { 
-                            width: 140px;
-                            height: 45px;
-                            font-size: 1.4rem;
+                            width: 180px;
+                            height: 65px;
+                            font-size: 2rem;
                         }
                         z-index: 1500 !important;
                         width: 100px;
@@ -172,9 +179,9 @@
                 img{
                     margin-left: 100px;
                     @media (min-width: 1900px) { 
-                        width: 80%;
+                        width: 90%;
                         margin-left: 80px;
-                        height: 80%;
+                        height: 90%;
                     }
                     width: 70%;
                     height: 70%;

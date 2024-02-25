@@ -54,6 +54,9 @@
             cursor: pointer;
             user-select: none;
             margin-left: 70px;
+            @media only screen and (min-width: 1900px){ 
+              font-size: 2rem
+            }
           }
         }
         .contenedorNavDesktop{
@@ -83,6 +86,9 @@
                 font-size: 1.2rem;
                 user-select: none;
                 cursor: pointer;
+                @media only screen and (min-width: 1900px){ 
+                  font-size: 1.8rem
+                }
               }
             }
           }
