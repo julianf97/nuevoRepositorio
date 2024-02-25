@@ -143,7 +143,9 @@ export default function Projects() {
                         />
                     ))}
                 {!searchResultsFound && searchTerm !== '' && ( // Mostrar el mensaje de no se encontraron proyectos
-                    <div className="noResultsMessage">No se ha encontrado ningún proyecto.</div>
+                    <div className="noResultsMessage">
+                        <h3> No se ha encontrado ningún proyecto. </h3>
+                    </div>
                 )}
             </div>
             {!showMore && (

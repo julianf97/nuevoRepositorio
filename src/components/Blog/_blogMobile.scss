@@ -1,0 +1,80 @@
+@media (max-width: 600px) { 
+    .contenedorBlog{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #060016;
+        .internoBlog{
+            width: 90%;
+            font-family: verdana, arial;
+            font-size: 10pt;
+            height: 95%;
+            background-color: #060016;
+            h3{
+                font-size: 25px;
+                color: #00c4ff;
+                font-weight: 700;
+            }
+            h4{
+                font-size: 30px;
+                color: #ffffff;
+                font-weight: 600;
+                padding-top: 5px;
+            }
+            .contenedorPosts{
+                width: 100%;
+                height: auto;
+                border-left: 1.5px dashed #747474;
+                margin-top: 20px;
+                margin-left: 5px;
+                padding-bottom: 20px;
+                .post{
+                    width: 98%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 10px;
+                    .internoPost{
+                        width: 90%;
+                        height: auto;
+                        border-bottom: 1.5px solid #414141;
+                        display: flex;
+                        flex-direction: column;
+                        overflow-wrap: break-word;
+                        padding-bottom: 10px;
+                        .tituloPost{
+                            color: #fff;
+                            font-size: 1rem;
+                            margin-top: 8px;
+                        }
+                        .cardBlog{
+                            background: rgb(194, 245, 212);
+                            border-radius: 7px;
+                            width: 50px;
+                            height: 20px !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                        }
+                        .cardYoutube{
+                            background: #FED7D7;
+                            border-radius: 7px;
+                            width: 60px;
+                            height: 20px !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+} 
