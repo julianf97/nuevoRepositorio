@@ -95,7 +95,7 @@ export default function Presentacion() {
                 transition={{ delay: 1.5, duration: 1 }}
                 onAnimationComplete={handleButtonsAnimationComplete}
               >
-                <a href={CV}>
+                <a href={CV} target="_blank">
                   <div className="btnResumen">Mi CV</div>
                 </a>
               </motion.div>

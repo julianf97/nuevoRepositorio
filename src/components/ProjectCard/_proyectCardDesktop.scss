@@ -37,11 +37,16 @@
             height: 180px; /* Altura del contenedor */
             position: relative; /* Establecer posición relativa */
             top: 0; /* Posición inicial en la parte superior */
-        
+            overflow: hidden;
             img {
                 width: 100%; /* Ancho de la imagen al 100% del contenedor */
                 height: 100%; /* Altura de la imagen al 100% del contenedor */
                 object-fit: cover; /* Ajuste de la imagen para cubrir el contenedor */
+                transition: transform 0.3s ease; /* Transición suave del efecto de zoom */
+            }
+        
+            &:hover img {
+                transform: scale(1.1); /* Aumentar el tamaño de la imagen en un 10% cuando se hace hover */
             }
         }
         .titleProyectContainer{

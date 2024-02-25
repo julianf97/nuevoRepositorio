@@ -41,7 +41,9 @@ export default function ProyectCard({ title, image, id, deployLink, serverLink, 
         )}
       </div>
       <div className='contenedorVerDetalle'>
-        <span>Ver Detalle</span>
+        <Link to={`/proyects/${id}`} rel="noopener noreferrer" className="btnResumen">
+          <span>Ver Detalle</span>
+        </Link>
       </div>
       <div className="contenedorTecnologias">
         {technologies.map((tech, index) => (
