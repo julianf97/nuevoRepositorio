@@ -52,7 +52,7 @@
                 align-items: center;
                 padding-top: 50px ;
                 @media (min-width: 1900px) { 
-                    padding-top: 150px;
+                    padding-top: 0px;
                     margin-top: 50px;
                 }
                 .cardFullStack{
@@ -124,7 +124,7 @@
                     text-align: start;
                     font-weight: 600;
                     @media (min-width: 1900px) { 
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                     }
                     font-size: 1.2rem;
                 }

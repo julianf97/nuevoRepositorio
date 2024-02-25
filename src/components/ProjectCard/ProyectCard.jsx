@@ -40,6 +40,9 @@ export default function ProyectCard({ title, image, id, deployLink, serverLink, 
           </Link>
         )}
       </div>
+      <div className='contenedorVerDetalle'>
+        <span>Ver Detalle</span>
+      </div>
       <div className="contenedorTecnologias">
         {technologies.map((tech, index) => (
           <div key={index} className="techTag">{tech}</div>
