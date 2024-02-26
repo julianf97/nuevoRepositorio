@@ -1,4 +1,4 @@
-@media (max-width: 600px) {  
+@media only screen and (min-width: 600px) and (max-width: 1025px) {  
     .contenedorBlogLogica{
         width: 100%;
         height: auto;
@@ -12,7 +12,8 @@
             height: 50px;
             display: flex;
             align-items: center;
-            padding-top: 100px;
+            padding-top: 150px;
+            font-size: 1.5rem;
             .back{
                 color: #fff;
                 margin-left: 8px;
@@ -23,7 +24,7 @@
             }
             .flechaIzquierda{
                 color: #fff;
-                margin-left: 15px;
+                margin-left: 45px;
                 cursor: pointer;
             }
         }
@@ -35,7 +36,7 @@
             align-items: center;
             h3{
                 color: #fff;
-                font-size: 1.4rem;
+                font-size: 2rem;
             }
         }
         .contenedorParrafoBlog{
@@ -46,10 +47,15 @@
             align-items: center;
             .interiorParrafoBlog{
                 width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 100px;
                 p{
                     color: #7c8494;
                     font-weight: 600;
-                    font-size: 1.2rem;
+                    font-size: 1.8rem;
+                    text-align: center;
                 }
             }
         }
@@ -60,6 +66,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            margin-top: 50px;
             .contenedorInteriorEnunciadosyEjercicios{
                 width: 90%;
                 height: auto;
@@ -68,14 +75,16 @@
                 align-items: center;
                 flex-direction: column;
                 h6{
-                    font-size: 1.3rem;
+                    font-size: 1.6rem;
                     color: #00c4ff;
-                    text-align: center;
+                    margin-bottom: 10px;
                 }
                 p{
                     margin-top: 20px;
                     color: #fff;
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    margin-bottom: 10px;
                 }
                 .contenedorImgResolucion{
                     width: 100%;
@@ -95,5 +104,4 @@
             }
         }
     }
-
 }

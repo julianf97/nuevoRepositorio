@@ -12,30 +12,16 @@ export default function Blog() {
         <div className="contenedorPosts">
           <div className="post">
             <div className="internoPost">
+              <span className="cardYoutube">Youtube</span>
+              <a href="" target="_blank">
+                <span className="tituloPost">Implemendo mi propio Server Side Rendering con NodeJs</span>
+              </a>
+            </div>
+          </div>
+          <div className="post">
+            <div className="internoPost">
               <span className="cardBlog">Blog</span>
               <span className="tituloPost">Diferentes tipos de renderizado de frontend (SSG, SSR, ISR y CSR)</span>
-            </div>
-          </div>
-          <div className="post">
-            <div className="internoPost">
-              <span className="cardBlog">Blog</span>
-              <span className="tituloPost">Como Funciona la Web</span>
-            </div>
-          </div>
-          <div className="post">
-            <div className="internoPost">
-              <span className="cardBlog">Blog</span>
-                <Link to={"/bloglogica"}>
-                  <span className="tituloPost">Ejercicios de Logica con Javascript</span>
-                </Link>
-            </div>
-          </div>
-          <div className="post">
-            <div className="internoPost">
-              <span className="cardYoutube">Youtube</span>
-              <a href="https://www.youtube.com/watch?v=ZjanQ5--xnw" target="_blank">
-                <span className="tituloPost">Map vs ForEach</span>
-              </a>
             </div>
           </div>
         </div>

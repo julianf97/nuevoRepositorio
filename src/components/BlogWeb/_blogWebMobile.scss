@@ -46,6 +46,7 @@
             align-items: center;
             .interiorParrafoBlog{
                 width: 90%;
+                padding-bottom: 100px;
                 p{
                     color: #7c8494;
                     font-weight: 600;
@@ -67,6 +68,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                border: solid 1px red;
                 h6{
                     font-size: 1.3rem;
                     color: #00c4ff;
@@ -75,7 +77,7 @@
                 p{
                     margin-top: 20px;
                     color: #fff;
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                 }
                 .contenedorImgResolucion{
                     width: 100%;
