@@ -30,7 +30,7 @@ export default function Blog() {
           <div className="post">
             <div className="internoPost">
               <span className="cardYoutube">Youtube</span>
-              <a href="https://www.youtube.com/watch?v=x0twmEElsGE&feature=youtu.be" target="_blank">
+              <a href="https://www.youtube.com/watch?v=ZjanQ5--xnw" target="_blank">
                 <span className="tituloPost">Map vs ForEach</span>
               </a>
             </div>
