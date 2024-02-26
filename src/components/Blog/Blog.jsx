@@ -1,6 +1,7 @@
 import "./_blogMobile.scss"
 import "./_blogIpad.scss"
 import "./_blogDesktop.scss"
+import { Link } from "react-router-dom"
 
 export default function Blog() {
   return (

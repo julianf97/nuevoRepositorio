@@ -1,7 +1,9 @@
-import React from 'react'
+import "./_blogLogica.scss"
 
 export default function BlogLogica() {
   return (
-    <div>BlogLogica</div>
+    <div className='contenedorBlogLogica'>
+        
+    </div>
   )
 }
