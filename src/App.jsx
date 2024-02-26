@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MyApp/>} />
             <Route path="/proyects/:id" element={<ProyectDetail/>} />
-            <Route path="/blogLogica" element={<BlogLogica/>} />
+            <Route path="/bloglogica" element={<BlogLogica/>} />
             <Route path="/*" element={<Navigate to="/" replace/>} />
           </Routes>
         </main>

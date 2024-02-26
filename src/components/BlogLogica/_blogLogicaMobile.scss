@@ -1,0 +1,27 @@
+@media (max-width: 600px) {  
+    .contenedorBlogLogica{
+        width: 100%;
+        height: 100vh;
+        background-color: #060016;
+        .contenedorVolver{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            .back{
+                color: #fff;
+                margin-left: 8px;
+                margin-top: -5px !important;
+                margin-bottom: 5px !important;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            .flechaIzquierda{
+                color: #fff;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}

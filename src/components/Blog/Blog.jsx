@@ -25,7 +25,9 @@ export default function Blog() {
           <div className="post">
             <div className="internoPost">
               <span className="cardBlog">Blog</span>
-              <span className="tituloPost">Ejercicios de Logica con Javascript</span>
+                <Link to={"/bloglogica"}>
+                  <span className="tituloPost">Ejercicios de Logica con Javascript</span>
+                </Link>
             </div>
           </div>
           <div className="post">

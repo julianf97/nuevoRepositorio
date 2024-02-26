@@ -38,7 +38,7 @@ export default function ProyectDetail() {
         <div className="internoProyectsDetail">
         {isMenuOpen ? <OpenNavbar /> : <span />}
         <div className="contenedorVolver">
-          <Link to={"/proyects"}>
+          <Link to={"/"}>
             <FontAwesomeIcon className='flechaIzquierda' icon={faArrowLeft} />
             <span className="back">Back</span>
           </Link>

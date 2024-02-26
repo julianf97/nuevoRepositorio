@@ -7,8 +7,6 @@ export const OpenNavbarProvider = ({ children }) => {
   const [isOpen, setOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  console.log(isMenuOpen)
-
   const handleExitNavbar = () => {
     setOpen(false);
     setMenuOpen(false);

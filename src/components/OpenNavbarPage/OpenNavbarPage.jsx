@@ -1,0 +1,72 @@
+import { motion } from "framer-motion";
+import "./_openNavbar.scss";
+import { OpenNavbarContext } from "../../context/OpenNavbarContext";
+import { useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
+
+export default function OpenNavbarPage() {
+  const { isMenuOpen, handleExitNavbar } = useContext(OpenNavbarContext);
+
+  const handleScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const offset = -5; // Ajuste de compensación de desplazamiento
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+
+      handleExitNavbar()
+    }
+  };
+
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+
+    // Habilitar scroll cuando el componente se desmonta
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+  }, [isMenuOpen]);
+
+  return (
+    <motion.div
+      className="contenedorGral"
+      initial={{ x: "-100vw", opacity: 0 }}
+      animate={{ x: isMenuOpen ? 0 : "-100vw", opacity: isMenuOpen ? 1 : 0 }}
+      transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
+    >
+      <div className="openNavbarContainer">
+        <div className="cabeceraOpenNavbarContainer">
+          <div className="contenedorLogoLetras"/>
+        </div>
+        <nav className="navegadorNavbarOpen">
+          <ul className="contenedorBotones">
+            <Link to="/" onClick={() => handleScrollTo("home")}>
+              <li className="btnNav">Home</li>
+            </Link>
+            <Link to="/" onClick={() => handleScrollTo("projects")}>
+              <li className="btnNav">Projects</li>
+            </Link>
+            <Link to="/" onClick={() => handleScrollTo("blog")}>
+              <li className="btnNav">Blog</li>
+            </Link>
+            <Link to="/" onClick={() => handleScrollTo("about")}>
+              <li className="btnNav">About</li>
+            </Link>
+          </ul>
+        </nav>
+      </div>
+    </motion.div>
+  );
+}

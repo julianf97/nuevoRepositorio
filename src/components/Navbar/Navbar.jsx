@@ -3,13 +3,13 @@ import { Divide as Hamburger } from "hamburger-react";
 import { motion, useAnimation } from "framer-motion";
 import logo from "../../../public/letrasLogo.png";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
+import { Link } from "react-router-dom";
 import "./_navbarMobile.scss";
 import "./_navbarIpad.scss";
 import "./_navbarDesktop.scss";
 
 export default function Navbar() {
-
-  const [navbarHeight, setNavbarHeight] = useState(10); 
+  const [navbarHeight, setNavbarHeight] = useState(10);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const { handleClickOpen, handleExitNavbar, isOpen } = useContext(
@@ -31,21 +31,20 @@ export default function Navbar() {
     };
   }, []);
 
-
   useEffect(() => {
     if (scrollPosition > 100) {
-      setNavbarHeight(8); // Cambiado a 5% cuando se hace scroll
+      setNavbarHeight(8);
     } else {
-      setNavbarHeight(10); // Vuelve al 10% cuando no se hace scroll
+      setNavbarHeight(10);
     }
 
-    controls.start({ height: `${navbarHeight}vh`, transition: { duration: 0.2 } }); // Usamos vh en lugar de % para ajustarlo mejor a la ventana
+    controls.start({ height: `${navbarHeight}vh`, transition: { duration: 0.2 } });
   }, [scrollPosition, navbarHeight, controls]);
 
   const handleScrollTo = (elementId) => {
     const element = document.getElementById(elementId);
     if (element) {
-      const offset = -5; // Ajuste de compensación de desplazamiento
+      const offset = -5;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -58,10 +57,25 @@ export default function Navbar() {
     }
   };
 
+  const handleClick = (elementId) => {
+    const currentPath = window.location.pathname;
+    if (currentPath === "/") {
+      handleScrollTo(elementId);
+    } else {
+      handleExitNavbar();
+      setTimeout(() => {
+        window.history.back();
+        setTimeout(() => {
+          handleScrollTo(elementId);
+        }, 500); // Espera para asegurar que la navegación se complete antes de hacer scroll
+      }, 300); // Espera para asegurar que la barra de navegación se cierre completamente antes de navegar
+    }
+  };
+
   return (
     <motion.nav
       className={`contenedorGralNavbar ${isOpen ? "open" : ""}`}
-      style={{ height: `${navbarHeight}vh` }} // Usamos vh en lugar de % para ajustarlo mejor a la ventana
+      style={{ height: `${navbarHeight}vh` }}
       animate={controls}
     >
       <div className="internoNavbarMobile">
@@ -92,37 +106,37 @@ export default function Navbar() {
         <div className="contenedorNavDesktop">
           <div className="internoNavDesktop">
             <ul>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleScrollTo("home")} // Scroll to Home
+                onClick={() => handleClick("home")}
               >
-                Home
+                <Link to="/">Home</Link>
               </motion.li>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleScrollTo("projects")} // Scroll to Projects
+                onClick={() => handleClick("projects")}
               >
-                Projects
+                <Link to="/">Projects</Link>
               </motion.li>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleScrollTo("blog")} // Scroll to About
+                onClick={() => handleClick("blog")}
               >
-                Blog
+                <Link to="/">Blog</Link>
               </motion.li>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleScrollTo("about")} // Scroll to Blog
+                onClick={() => handleClick("about")}
               >
-                About
+                <Link to="/">About</Link>
               </motion.li>
             </ul>
           </div>

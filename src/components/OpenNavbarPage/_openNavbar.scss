@@ -1,0 +1,91 @@
+body.menu-open {
+    overflow: hidden; /* Deshabilita el scroll cuando el menú está abierto */
+}
+.contenedorGral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 6, 23, 0.9); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    .openNavbarContainer{
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background-color: #020617;
+        .cabeceraOpenNavbarContainer{
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: start;
+            background-color: #02061700;
+            padding-top: 40px;
+            .contenedorLogoImagen{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: 80%;
+                    object-fit: contain;
+                }
+            }
+            .contenedorLogoLetras{
+                width: 60%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                    height: 70%;
+                    object-fit: cover;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .navegadorNavbarOpen{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            .contenedorBotones{
+                width: 90%;
+                height: 80%;
+                li {
+                    color: #ffffffc5;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    transition: 0.2s;
+                }
+                li:hover{
+                    color: #fff;
+                }
+                .btnNav {
+                    width: 100%; /* w-full */
+                    min-height: 50px; /* min-h-[50px] */
+                    border-radius: 10px; /* rounded-[10px] */
+                    border: 1px solid #7042f861; /* border */
+                    display: flex;
+                    flex-direction: row; /* flex flex-row */
+                    align-items: center; /* items-center */
+                    justify-content: center; /* justify-center */
+                    font-weight: 600; /* font-semibold */
+                    transition: 0.2s;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        border-color: #0ca8fd; /* hover:border-sky-500 */
+                    }
+                }
+            }
+        }
+    }  
+}
