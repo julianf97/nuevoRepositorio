@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const ANSWERS = {
   default: (
-    <p>En realidad no soy Julián, soy una IA preparada para contestar solo algunas preguntas. Intenta reformular por favor.</p>
+    <p>En realidad no soy Julián, soy una IA preparada para contestar solo algunas preguntas.</p>
   ), 
   intro: (
     <p>
@@ -36,6 +36,10 @@ const ANSWERS = {
       <br/>
       Correo Electronico: julianfinelli97@gmail.com
     </p>
+  ),
+  trabajo:(
+    <p>Actualmente trabajo como freelancer, estoy actualmente en búsqueda de nuevas oportunidades en empresas que me permitan crecer en el campo del desarrollo web en un puesto que me
+    desafíe y brinde espacio para el aprendizaje continuo</p>
   ),
   comunidad: (
     <p>Empece a aprender a programar de manera autodidacta hace 3 años focalizado en el desarrollo web, éste portfolio y casi todos mis proyectos están hechos con React Js, éste chatbot lo pude hacer gracias a Gonzalo Pozzo</p>
@@ -71,17 +75,19 @@ const EXAMPLES = [
   { "text": "Que usas para programar?", "label": "tecnologias" },
   { "text": "Cuales son tus herramientas como desarrollador", "label": "tecnologias" },
   { "text": "¿Cuáles son tus habilidades técnicas principales?", "label": "tecnologias" },
+  { "text": "Donde trabajas actualmente?", "label": "trabajo" },
+  { "text": "Te interesa cambiar de trabajo?", "label": "trabajo" },
   { "text": "Como aprender a programar?", "label": "comunidad" },
   { "text": "Como aprendiste a programar?", "label": "comunidad" },
   { "text": "Como hiciste este portfolio?", "label": "comunidad" },
-  { "text": "Como hiciste este chat?", "label": "comunidad" },
+  { "text": "Como hiciste este chatbot?", "label": "comunidad" },
 ];
 
 const API_KEY = "2ubp5gck59AEQnj1n5vuP334xEf9kgIjHnZTU7ET";
 
 export default function About() {
   const [messages, setMessages] = useState([
-    { id: "1", type: "bot", text: "Quieres saber sobre mí? preguntame!" },
+    { id: "1", type: "bot", text: "Quieres saber sobre mí? preguntame!, Soy un bot creado para responder solo ALGUNAS preguntas de Julián Finelli" },
     { id: "2", type: "user", text: "Hola, soy un usuario" },
   ]);
 
