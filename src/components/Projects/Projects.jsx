@@ -18,6 +18,8 @@ import JavascriptTag from "../Tags/JavascriptTag/JavascriptTag"
 import HtmlTag from "../Tags/HtmlTag/HtmlTag"
 import CssTag from "../Tags/CssTag/CssTag"
 import FireBaseTag from "../Tags/FirebaseTag/FireBaseTag"
+import { LenguajeContext } from "../../context/LenguajeContext";
+import { useContext } from "react";
 import "./_projectsDesktop.scss";
 import "./_projectsIpad.scss";
 import "./_projectsMobile.scss";
@@ -28,6 +30,8 @@ export default function Projects() {
     const [showMore, setShowMore] = useState(false);
     const [projectsToShow, setProjectsToShow] = useState(6); // Mostrar inicialmente 6 proyectos
     const [searchResultsFound, setSearchResultsFound] = useState(true); // Estado para controlar si se encontraron resultados
+
+    const { activeEng } = useContext(LenguajeContext);
 
     useEffect(() => {
         // Comprobar si se encontraron resultados después de la búsqueda
@@ -72,10 +76,10 @@ export default function Projects() {
     return (
         <article id="projects" className="contenedorGralProjects">
             <div className="contenedorTitulo">
-                <h3>Proyectos</h3>
+                <h3>{activeEng ? "Projects" : "Proyectos"}</h3>
             </div>
             <div className="contenedorTitulo">
-                <h4>Proyectos Destacados</h4>
+                <h4>{activeEng ? "Featured Projects" : "Proyectos Destacados"}</h4>
             </div>
             <div className="contenedorBuscador">
                 <div className="internoBuscador">
@@ -93,13 +97,13 @@ export default function Projects() {
             <div className="contenedorBuscadorDesktop">
                 <div className="internoBuscador">
                     <div className="contenedorTituloDesktop">
-                        <h3>Proyectos</h3>
+                        <h3>{activeEng ? "Projects" : "Proyectos"}</h3>
                     </div>
                     <div className='buscador'>
                         <FontAwesomeIcon className='iconLupa' icon={faMagnifyingGlass}></FontAwesomeIcon>
                         <input
                             type="text"
-                            placeholder='Search'
+                            placeholder={activeEng ? "Search" : "Buscar"}
                             value={searchTerm}
                             onChange={handleSearchChange}
                         />
@@ -108,7 +112,7 @@ export default function Projects() {
             </div>
             <div className="contenedorFiltro">
                 <div className="internoFiltro">
-                    <button onClick={() => handleFilterChange('All')}>All</button>
+                    <button onClick={() => handleFilterChange('All')}>{activeEng ? "All" : "Todos"}</button>
                     <button onClick={() => handleFilterChange('Frontend')}>Front End</button>
                     <button onClick={() => handleFilterChange('Fullstack')}>Full Stack</button>
                 </div>
@@ -131,6 +135,7 @@ export default function Projects() {
                             key={index}
                             id={project.id}
                             title={project.title}
+                            titleENG={project.titleENG}
                             image={project.image}
                             deployLink={project.deployLink}
                             serverLink={project.serverLink}
@@ -150,7 +155,7 @@ export default function Projects() {
             </div>
             {!showMore && (
                 <div className="contenedorBtnVerMas">
-                    <button className="btnVerMas" onClick={handleShowMore}>Ver Más</button>
+                    <button className="btnVerMas" onClick={handleShowMore}>{activeEng ? "See More" : "Ver Más"}</button>
                 </div>
             )}
         </article>

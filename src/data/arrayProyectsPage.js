@@ -11,8 +11,8 @@ import coloCossyScreen from "../../public/screensProyect/screenColoCossy.png";
 export const arrayProjectsPage = [
   {
     id: "mercadoLibre",
-    title: "Buscador Mercado Libre",
-    titleENG: "Mercado Libre Technical Challenge",
+    title: "Buscador Mercado Libre", 
+    titleENG: "Mercado Libre Search Engine",
     image: mercadoLibreScreen,
     deployLink: "https://julian-merc-libre.vercel.app/",
     serverLink: "https://server-julianstore.onrender.com/",
@@ -80,7 +80,7 @@ export const arrayProjectsPage = [
   },
   {
     id: "megadeth",
-    title: "Megadeth Fan Website",
+    title: "Megadeth Fan Sitio Web",
     titleENG: "Megadeth Fan Website", 
     image: megadethScreen,
     deployLink: "https://megadeth.netlify.app/",

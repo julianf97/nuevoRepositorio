@@ -3,6 +3,7 @@ import { Divide as Hamburger } from "hamburger-react";
 import { motion, useAnimation } from "framer-motion";
 import logo from "../../../public/letrasLogo.png";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
+import { LenguajeContext } from "../../context/LenguajeContext";
 import { Link } from "react-router-dom";
 import "./_navbarMobile.scss";
 import "./_navbarIpad.scss";
@@ -12,9 +13,8 @@ export default function Navbar() {
   const [navbarHeight, setNavbarHeight] = useState(10);
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const { handleClickOpen, handleExitNavbar, isOpen } = useContext(
-    OpenNavbarContext
-  );
+  const { handleClickOpen, handleExitNavbar, isOpen } = useContext(OpenNavbarContext);
+  const { handleChangeLenguaje, activeEng } = useContext(LenguajeContext);
 
   const controls = useAnimation();
 
@@ -82,7 +82,11 @@ export default function Navbar() {
         <div className="contenedorLogo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="contenedorLenguajeMobile">ES</div>
+        <div className="contenedorLenguajeMobile">
+          <span onClick={handleChangeLenguaje}>
+            ES
+          </span>
+        </div>
         <div className="contenedorLogo">
           <Hamburger
             onToggle={(toggled) => {
@@ -126,23 +130,23 @@ export default function Navbar() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleClick("blog")}
+                onClick={() => handleClick("about")}
               >
-                <Link to="/">Blog</Link>
+                <Link to="/">About</Link>
               </motion.li>
               <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleClick("about")}
+                onClick={() => handleClick("blog")}
               >
-                <Link to="/">About</Link>
+                <Link to="/">Blog</Link>
               </motion.li>
             </ul>
           </div>
         </div>
         <div className="contenedorLenguaje">
-          <span>ES</span>
+          {activeEng ? <span onClick={handleChangeLenguaje}>ENG</span> : <span onClick={handleChangeLenguaje}>ES</span> }
         </div>
       </div>
     </motion.nav>

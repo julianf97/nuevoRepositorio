@@ -58,11 +58,11 @@ export default function OpenNavbarPage() {
             <Link to="/" onClick={() => handleScrollTo("projects")}>
               <li className="btnNav">Projects</li>
             </Link>
-            <Link to="/" onClick={() => handleScrollTo("blog")}>
-              <li className="btnNav">Blog</li>
-            </Link>
             <Link to="/" onClick={() => handleScrollTo("about")}>
               <li className="btnNav">About</li>
+            </Link>
+            <Link to="/" onClick={() => handleScrollTo("blog")}>
+              <li className="btnNav">Blog</li>
             </Link>
           </ul>
         </nav>

@@ -54,8 +54,8 @@ export default function OpenNavbar() {
           <ul className="contenedorBotones">
             <li onClick={ () => handleScrollTo("home")} className="btnNav">Home</li>
             <li onClick={ () => handleScrollTo("projects")} className="btnNav">Proyects</li>
-            <li onClick={ () => handleScrollTo("blog")} className="btnNav">Blog</li>
             <li onClick={ () => handleScrollTo("about")} className="btnNav">About</li>
+            <li onClick={ () => handleScrollTo("blog")} className="btnNav">Blog</li>
           </ul>
         </nav>
       </div>

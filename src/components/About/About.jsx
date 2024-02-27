@@ -1,7 +1,8 @@
 import "./_aboutMobile.scss";
 import "./_aboutIpad.scss";
 import "./_aboutDesktop.scss";
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useContext } from 'react';
+import { LenguajeContext } from "../../context/LenguajeContext";
 
 const ANSWERS = {
   default: (
@@ -95,6 +96,9 @@ export default function About() {
   const [loading, setLoading] = useState(false);
   const container = useRef(null);
 
+
+  const { activeEng } = useContext(LenguajeContext);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -145,7 +149,7 @@ export default function About() {
     <div id="about" className="contenedorGralAbout">
       <div className="internoAbout">
         <div className="contenedorTitulo">
-          <h3>About</h3>
+          <h3>{activeEng ? "About" : "Sobre mi"}</h3>
           <h4>Chat</h4>
         </div>
         <div ref={container} className="contenedorChat">
@@ -159,11 +163,11 @@ export default function About() {
               value={question}
               onChange={event => setQuestion(event.target.value)}
               name="question" 
-              placeholder="Haz tu pregunta" 
+              placeholder={activeEng ? "Ask your question" : "Haz tu pregunta"}
               className="" 
               type="text">
             </input>
-            <button disabled={loading} className={ loading ?  `colorButtonIsLoading` : `colorButtonNotLoading`} type="submit"> Enviar </button>
+            <button disabled={loading} className={ loading ?  `colorButtonIsLoading` : `colorButtonNotLoading`} type="submit"> {activeEng ? "Send" : "Enviar"} </button>
           </form>
         </div>
       </div>

@@ -6,14 +6,16 @@
         .internoBlogLogica{
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .contenedorVolver{
             width: 100%;
             height: 50px;
             display: flex;
             align-items: center;
-            padding-top: 150px;
-            font-size: 1.5rem;
+            padding-top: 100px;
             .back{
                 color: #fff;
                 margin-left: 8px;
@@ -24,19 +26,21 @@
             }
             .flechaIzquierda{
                 color: #fff;
-                margin-left: 45px;
+                margin-left: 15px;
                 cursor: pointer;
             }
         }
         .contenedorTitulo{
-            width: 100%;
+            width: 80%;
             height: 10vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
             h3{
                 color: #fff;
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
         .contenedorParrafoBlog{
@@ -46,16 +50,16 @@
             justify-content: center;
             align-items: center;
             .interiorParrafoBlog{
-                width: 90%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                width: 80%;
                 padding-bottom: 100px;
                 p{
                     color: #7c8494;
                     font-weight: 600;
-                    font-size: 1.8rem;
-                    text-align: center;
+                    font-size: 1.2rem;
+                }
+                h5{
+                    font-size: 1.5rem;
+                    color: #fff;
                 }
             }
         }
@@ -66,7 +70,6 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            margin-top: 50px;
             .contenedorInteriorEnunciadosyEjercicios{
                 width: 90%;
                 height: auto;
@@ -74,17 +77,16 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                border: solid 1px red;
                 h6{
-                    font-size: 1.6rem;
+                    font-size: 1.3rem;
                     color: #00c4ff;
-                    margin-bottom: 10px;
+                    text-align: center;
                 }
                 p{
                     margin-top: 20px;
                     color: #fff;
                     font-size: 1.4rem;
-                    text-align: center;
-                    margin-bottom: 10px;
                 }
                 .contenedorImgResolucion{
                     width: 100%;

@@ -6,11 +6,15 @@ import CV from "../../../public/CV-Julian-Finelli-2024.pdf";
 import foto from "../../../public/fotoSinFondo.png";
 import video from "../../../public/portfolioBackgroundVideo.webm"
 import { useState } from "react";
+import { LenguajeContext } from "../../context/LenguajeContext";
+import { useContext } from "react";
 
 export default function Presentacion() {
   const [imgAnimationComplete, setImgAnimationComplete] = useState(false);
   const [buttonsAnimationComplete, setButtonsAnimationComplete] = useState(false);
   const [cardAnimationComplete, setCardAnimationComplete] = useState(false);
+
+  const { activeEng } = useContext(LenguajeContext);
 
   const handleImgAnimationComplete = () => {
     setImgAnimationComplete(true);
@@ -58,9 +62,10 @@ export default function Presentacion() {
             transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
           >
             <h1>
-              Hola 👋! Soy <span className="theBest">Julián Finelli </span>{" "}
+              {activeEng ? "Hello 👋! I'm " : "Hola 👋! Soy "}
+              <span className="theBest">Julián Finelli </span>{" "}
               <br />
-              Desarrollador Web
+              {activeEng ? "Web Developer " : "Desarrollador Web "}
             </h1>
           </motion.div>
           <motion.div
@@ -70,9 +75,7 @@ export default function Presentacion() {
             transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
           >
             <p>
-              Mi filosofía de trabajo es simple pero poderosa: buscar la
-              excelencia y calidad en cada tarea. ¡Bienvenido a explorar mi
-              viaje en un mundo de energía creativa en constante evolución!
+              {activeEng ? "My work philosophy is simple yet powerful: to strive for excellence and quality in every task. Welcome to explore my journey in a world of constantly evolving creative energy! " : "Mi filosofía de trabajo es simple pero poderosa: buscar la excelencia y calidad en cada tarea. ¡Bienvenido a explorar miviaje en un mundo de energía creativa en constante evolución!"}
             </p>
             <div className={`contenedorBotones ${buttonsAnimationComplete ? 'show' : ''}`}>
               <motion.div
@@ -86,7 +89,9 @@ export default function Presentacion() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="btnResumen">Contactame</div>
+                  <div className="btnResumen">
+                    {activeEng ? "Contact me" : "Contactame "}
+                  </div>
                 </a>
               </motion.div>
               <motion.div
@@ -96,7 +101,7 @@ export default function Presentacion() {
                 onAnimationComplete={handleButtonsAnimationComplete}
               >
                 <a href={CV} target="_blank">
-                  <div className="btnResumen">Mi CV</div>
+                  <div className="btnResumen">{activeEng ? "My Resume" : "Mi CV "}</div>
                 </a>
               </motion.div>
             </div>
