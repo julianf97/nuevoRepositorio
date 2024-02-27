@@ -44,7 +44,7 @@ export default function Blog() {
           <div className="post">
             <div className="internoPost">
               <span className="cardYoutube">Youtube</span>
-                <span onClick={showAlert} className="tituloPost">{activeEng ? "Implementing my own Server-Side Rendering with Node.js" : "Implemendo mi propio Server Side Rendering con NodeJs"}</span>
+                <span onClick={showAlert} className="tituloPost">{activeEng ? "Implementing my own Server-Side Rendering with Node.js" : "Implementando mi propio Server Side Rendering con NodeJs"}</span>
             </div>
           </div>
           <div className="post">
