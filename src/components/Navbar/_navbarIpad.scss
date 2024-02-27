@@ -44,6 +44,10 @@
             align-items: center;
             font-weight: 600;
             font-size: 30px;
+            span{
+              cursor: pointer;
+              user-select: none;
+            }
         }
       }
     }
