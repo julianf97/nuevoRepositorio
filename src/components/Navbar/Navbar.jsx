@@ -83,9 +83,7 @@ export default function Navbar() {
           <img src={logo} alt="logo" />
         </div>
         <div className="contenedorLenguajeMobile">
-          <span onClick={handleChangeLenguaje}>
-            ES
-          </span>
+          {activeEng ? <span onClick={handleChangeLenguaje}>ENG</span> : <span onClick={handleChangeLenguaje}>ES</span> }
         </div>
         <div className="contenedorLogo">
           <Hamburger
