@@ -4,6 +4,7 @@ import Projects from "../Projects/Projects"
 import Blog from "../Blog/Blog"
 import { useContext, useEffect } from "react"
 import { OpenNavbarContext } from "../../context/OpenNavbarContext"
+import About from "../About/About"
 
 export default function MyApp() {
 
@@ -18,6 +19,7 @@ export default function MyApp() {
       <Presentacion/>
       <OpenNavbar/>
       <Projects/>
+      <About/>
       <Blog/>
     </>
   )
