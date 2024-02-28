@@ -75,7 +75,7 @@ export default function Presentacion() {
             transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
           >
             <p>
-              {activeEng ? "My work philosophy is simple yet powerful: to strive for excellence and quality in every task. Welcome to explore my journey in a world of constantly evolving creative energy! " : "Mi filosofía de trabajo es simple pero poderosa: buscar la excelencia y calidad en cada tarea. ¡Bienvenido a explorar miviaje en un mundo de energía creativa en constante evolución!"}
+              {activeEng ? "My work philosophy is simple yet powerful: to strive for excellence and quality in every task. Welcome to explore my journey in a world of constantly evolving creative energy! " : "Mi filosofía de trabajo es simple pero poderosa: buscar la excelencia y calidad en cada tarea. ¡Bienvenido a explorar mi viaje en un mundo de energía creativa en constante evolución!"}
             </p>
             <div className={`contenedorBotones ${buttonsAnimationComplete ? 'show' : ''}`}>
               <motion.div
