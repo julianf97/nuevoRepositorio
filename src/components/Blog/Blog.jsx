@@ -44,7 +44,7 @@ export default function Blog() {
           <div className="post">
             <div className="internoPost">
               <span className="cardYoutube">Youtube</span>
-                <a href="https://www.youtube.com/watch?v=w7jiMU7Ubqg" target="blank">
+                <a href="https://www.youtube.com/watch?v=LUI0xGATNIY" target="blank">
                   <span className="tituloPost">{activeEng ? "Implementing my own Server-Side Rendering with Node.js" : "Implementando mi propio Server Side Rendering con NodeJs"}</span>
                 </a>
             </div>
