@@ -6,6 +6,7 @@ import "./App.css"
 import MyApp from './components/MyApp/MyApp.jsx';
 import ProyectDetail from './components/ProyectDetail/ProyectDetail.jsx';
 import BlogWeb from './components/BlogWeb/BlogWeb.jsx';
+import BlogSSR from './components/BlogSSR/BlogSSR.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<MyApp/>} />
               <Route path="/proyects/:id" element={<ProyectDetail/>} />
               <Route path="/distintostiposderenderizado" element={<BlogWeb/>} />
+              <Route path="/implementandomipropiossr" element={<BlogSSR/>} />
               <Route path="/*" element={<Navigate to="/" replace/>} />
             </Routes>
           </main>

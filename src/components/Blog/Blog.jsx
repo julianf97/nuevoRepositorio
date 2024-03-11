@@ -43,10 +43,13 @@ export default function Blog() {
         <div className="contenedorPosts">
           <div className="post">
             <div className="internoPost">
-              <span className="cardYoutube">Youtube</span>
-                <a href="https://www.youtube.com/watch?v=LUI0xGATNIY" target="blank">
+              <div className="twoCards">
+                <span className="cardYoutube">Youtube</span>
+                <span className="cardBlog">Blog</span>
+              </div>
+                <Link to={"/implementandomipropiossr"}>
                   <span className="tituloPost">{activeEng ? "Implementing my own Server-Side Rendering with Node.js" : "Implementando mi propio Server Side Rendering con NodeJs"}</span>
-                </a>
+                </Link>
             </div>
           </div>
           <div className="post">

@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
 import OpenNavbarPage from "../OpenNavbarPage/OpenNavbarPage";
-import { arrayProjectsPage } from "../../data/arrayProyectsPage";
-import { LenguajeContext } from "../../context/LenguajeContext";
 
 export default function BlogWeb() {
   const { handleExitNavbar } = useContext(OpenNavbarContext);
