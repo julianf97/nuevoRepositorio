@@ -41,11 +41,20 @@ export default function Blog() {
         <h3>Blog</h3>
         <h4>Posts</h4>
         <div className="contenedorPosts">
+        <div className="post">
+            <div className="internoPost">
+              <div className="twoCards">
+                <span className="cardBlog">Blog</span>
+              </div>
+                <Link to={"/queeselpackagejson"}>
+                  <span className="tituloPost">{activeEng ? "What is Package.json?" : "Qué es el Package.json?"}</span>
+                </Link>
+            </div>
+          </div>
           <div className="post">
             <div className="internoPost">
               <div className="twoCards">
                 <span className="cardYoutube">Youtube</span>
-                <span className="cardBlog">Blog</span>
               </div>
                 <Link to={"/implementandomipropiossr"}>
                   <span className="tituloPost">{activeEng ? "Implementing my own Server-Side Rendering with Node.js" : "Implementando mi propio Server Side Rendering con NodeJs"}</span>
