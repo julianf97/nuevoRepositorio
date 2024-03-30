@@ -104,7 +104,7 @@ export const arrayProjectsPage = [
     titleENG: "Space Games", 
     image: spaceGamesScreen,
     deployLink: "https://space-games.vercel.app/",
-    repositoryLink: "https://github.com/julianf97/megadeth",
+    repositoryLink: "https://github.com/julianf97/ProyectoFinal.git",
     technologies: ["ReactTag", "JavascriptTag", "FireBaseTag",  "SassTag"],
     stack: "fullstack",
     tecnologiesandfeatures: [ "React", "Javascript", "Firebase", "Sass"],
