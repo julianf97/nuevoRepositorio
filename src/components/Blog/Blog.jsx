@@ -46,6 +46,16 @@ export default function Blog() {
               <div className="twoCards">
                 <span className="cardBlog">Blog</span>
               </div>
+                <Link to={"/quesonlosmiddlewere"}>
+                  <span className="tituloPost">{activeEng ? "What are Middlewares in Node.js and Express?" : "Qué son los Middlewares en Node.js y Express?"}</span>
+                </Link>
+            </div>
+          </div>
+        <div className="post">
+            <div className="internoPost">
+              <div className="twoCards">
+                <span className="cardBlog">Blog</span>
+              </div>
                 <Link to={"/queeselpackagejson"}>
                   <span className="tituloPost">{activeEng ? "What is Package.json?" : "Qué es el Package.json?"}</span>
                 </Link>
