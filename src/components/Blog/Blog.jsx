@@ -46,6 +46,16 @@ export default function Blog() {
               <div className="twoCards">
                 <span className="cardBlog">Blog</span>
               </div>
+                <Link to={"/qrpdf"}>
+                  <span className="tituloPost">{activeEng ? "What are Middlewares in Node.js and Express?" : "Integración de Códigos QR en Documentos PDF con Node.js"}</span>
+                </Link>
+            </div>
+          </div>
+        <div className="post">
+            <div className="internoPost">
+              <div className="twoCards">
+                <span className="cardBlog">Blog</span>
+              </div>
                 <Link to={"/quesonlosmiddlewere"}>
                   <span className="tituloPost">{activeEng ? "What are Middlewares in Node.js and Express?" : "Qué son los Middlewares en Node.js y Express?"}</span>
                 </Link>

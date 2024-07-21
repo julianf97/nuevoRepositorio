@@ -9,6 +9,7 @@ import BlogWeb from './components/BlogWeb/BlogWeb.jsx';
 import BlogSSR from './components/BlogSSR/BlogSSR.jsx';
 import BlogPackageJson from './components/BlogPackageJson/BlogPackageJson.jsx';
 import BlogMiddlewere from './components/BlogMiddlewere/BlogMiddlewere.jsx';
+import BlogQR from './components/BlogQR/BlogQR.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path="/implementandomipropiossr" element={<BlogSSR/>} />
               <Route path="/queeselpackagejson" element={<BlogPackageJson/>} />
               <Route path="/quesonlosmiddlewere" element={<BlogMiddlewere/>} />
+              <Route path="/qrpdf" element={<BlogQR />} />
               <Route path="/*" element={<Navigate to="/" replace/>} />
             </Routes>
           </main>
