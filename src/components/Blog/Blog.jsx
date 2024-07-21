@@ -47,7 +47,7 @@ export default function Blog() {
                 <span className="cardBlog">Blog</span>
               </div>
                 <Link to={"/qrpdf"}>
-                  <span className="tituloPost">{activeEng ? "What are Middlewares in Node.js and Express?" : "Integración de Códigos QR en Documentos PDF con Node.js"}</span>
+                  <span className="tituloPost">{activeEng ? "Integration of QR Codes in PDF Documents with Node.js" : "Integración de Códigos QR en Documentos PDF con Node.js"}</span>
                 </Link>
             </div>
           </div>
