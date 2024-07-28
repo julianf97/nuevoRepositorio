@@ -37,6 +37,10 @@ El usuario puede ver su ubicación actual en un mapa junto con la información d
 Si el usuario presiona el boton guardar coordenadas sin elegir un numero de medidor saldrá el aviso para que se seleccione un medidor antes de guardar las coordenadas:
 <br><br>
 <img src="./src/assets/readmeMedidores/coordenadasMobileAccionNoDisponible.png">
+<br><br>
+Cuando el usuario ya ha seleccionado un medidor y presiona en guardar coordenadas, le saldrá el modal con la información de su latitud y longitud donde está situado que serán los nuevos datos de ubicación del medidor que ha seleccionado: 
+<br><br>
+<img src="./src/assets/readmeMedidores/nuevasCoordenadas.png">
 
 ## Instrucciones de Instalación
 
