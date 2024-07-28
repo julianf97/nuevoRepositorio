@@ -42,7 +42,11 @@ Cuando el usuario ya ha seleccionado un medidor y presiona en guardar coordenada
 <br><br>
 <img src="./src/assets/readmeMedidores/nuevasCoordenadas.png">
 <br><br>
-Si presiona guardar, se actualizarán las coordenadas de ese medidor que ha seleccionado cambiando la latitud y longitud que tenía anteriormente por la latitud y la longitud que tenga el operario de donde esté usando la aplicación desde su celular.
+Si presiona guardar, y si estas coordenadas donde está situado el operario con su celular ya existen en la base de datos, no podrá actualizar las coordenadas del medidor seleccionado y le saldrá el modal de error:
+<br><br>
+<img src="./src/assets/readmeMedidores/coordenadaExisteAlActualizarCoordenadas.png">
+<br><br>
+Si presiona guardar, y las coordenadas no existen en la base de datos se actualizarán las coordenadas de ese medidor que ha seleccionado cambiando la latitud y longitud que tenía anteriormente por la latitud y la longitud que tenga el operario de donde esté usando la aplicación desde su celular.
 <br><br>
 <img src="./src/assets/readmeMedidores/exitoCoordenadas.png">
 <br><br>
