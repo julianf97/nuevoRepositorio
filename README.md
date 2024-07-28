@@ -50,7 +50,10 @@ Si presiona guardar, se actualizarán las coordenadas de ese medidor que ha sele
 <br><br>
 <img src="./src/assets/readmeMedidores/botonNuevoMedidor.png">
 <br><br>
-
+Cuando el usuario presiona guardar nuevo medidor se le abrirá el modal donde le pide ingresar la calle, numero, barrio y numero de medidor, estos campos son obligatorios, también hay un checkbox para indicar si la calle es BIS
+<br><br>
+<img src="./src/assets/readmeMedidores/modalNuevoMedidor.png">
+<br><br>
 
 
 ## Instrucciones de Instalación
