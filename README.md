@@ -41,6 +41,11 @@ Si el usuario presiona el boton guardar coordenadas sin elegir un numero de medi
 Cuando el usuario ya ha seleccionado un medidor y presiona en guardar coordenadas, le saldrá el modal con la información de su latitud y longitud donde está situado que serán los nuevos datos de ubicación del medidor que ha seleccionado: 
 <br><br>
 <img src="./src/assets/readmeMedidores/nuevasCoordenadas.png">
+<br><br>
+Si presiona guardar, se actualizarán las coordenadas de ese medidor que ha seleccionado cambiando la latitud y longitud que tenía anteriormente por la latitud y la longitud que tenga el operario de donde esté usando la aplicación desde su celular.
+<br><br>
+<img src="./src/assets/readmeMedidores/exitoCoordenadas.png">
+<br><br>
 
 ## Instrucciones de Instalación
 
