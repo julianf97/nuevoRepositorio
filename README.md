@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Esta aplicación está destinada para que sea usada por los operarios encargados de tomar las mediciones de los medidodres de agua y para el usuario administrador de la información de los medidores y las mediciones.
+La aplicación está destinada para que sea usada por los operarios encargados de tomar las mediciones de los medidodres de agua y para el usuario administrador de la información de los medidores y las mediciones.
 
 ### Acciones de los Operarios
 - **Agregar nuevos medidores**: Guardar un nuevo medidor con las coordenadas de latitud y longitud actuales del operario.
