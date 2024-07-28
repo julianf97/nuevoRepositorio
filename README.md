@@ -30,7 +30,7 @@ El usuario puede ver su ubicación actual en un mapa junto con la información d
 <br><br>
 <img src="./src/assets/readmeMedidores/coordenadasMobile2.png">
 <br><br>
-**Botones:**
+**Boton - "Guardar coordenadas":**
 <br><br>
 <img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
 <br><br>
@@ -46,6 +46,12 @@ Si presiona guardar, se actualizarán las coordenadas de ese medidor que ha sele
 <br><br>
 <img src="./src/assets/readmeMedidores/exitoCoordenadas.png">
 <br><br>
+**Boton - "Nuevo medidor":**
+<br><br>
+<img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
+<br><br>
+
+
 
 ## Instrucciones de Instalación
 
