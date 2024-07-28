@@ -18,7 +18,7 @@ En la pantalla principal "Coordenadas," el usuario puede buscar un medidor filtr
 El usuario puede ver su ubicación actual en un mapa junto con la información de latitud y longitud. Al guardar un nuevo medidor, se almacenarán las coordenadas de latitud y longitud correspondientes a la ubicación actual del operario con su celular.
 <br><br>
 <img src="./src/assets/readmeMedidores/coordenadasMobile2.png">
-<img src="./src/assets/readmeMedidores/botonescoordenadas.png">
+<img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
 
 
 
