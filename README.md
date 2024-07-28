@@ -1,12 +1,10 @@
-# Medidores de agua
+# SN | Medidores de agua
 
 <img src="./src/assets/readmeMedidores/firstImage.png">
 
-# Solicitud de Carnet de Manipulador de Alimentos
-
 ## Descripción
 
-Este proyecto es una aplicación ficticia dedicada a simplificar el proceso de solicitud del carnet de manipulador de alimentos para los residentes de la ciudad de San Nicolás de los Arroyos. Facilita a los usuarios el registro, inicio de sesión y la presentación de la solicitud del carnet, todo dentro de una plataforma centralizada y de fácil acceso. Una vez iniciada la sesión, los vecinos pueden completar el trámite sin complicaciones, agilizando así el proceso administrativo requerido para obtener el carnet de manipulador de alimentos.
+Esta aplicación está destinada a los operarios encargados de tomar las mediciones de los medidores de agua de la ciudad
 
 ## Paginas
 
