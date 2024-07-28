@@ -12,6 +12,7 @@ También está destinada para que un usuario administrador pueda ver todos los m
 __Pagina principal - Coordenadas__:
 
 En la pantalla principal "Coordenadas," el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas. El usuario puede ver su ubicación actual en un mapa junto con la información de latitud y longitud. Al guardar un nuevo medidor, se almacenarán las coordenadas de latitud y longitud correspondientes a la ubicación actual del operario con su celular.
+
 <img src="./src/assets/readmeMedidores/coordenadasMobile1.png">
 
 __Inicio de sesión__:
