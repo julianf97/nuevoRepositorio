@@ -4,11 +4,7 @@
 
 ## Descripción
 
-Esta aplicación está destinada a los operarios encargados de tomar las mediciones de los medidores de agua. Los operarios pueden agregar nuevos medidores, actualizando las coordenadas de latitud y longitud donde se encuentren situados con su celular, así como actualizar las coordenadas de medidores ya instalados. Además, permite registrar las mediciones mensuales de los medidores. 
-
-<br><br>
-
-También esta aplicación está destinada para que un usuario administrador pueda ver todos los medidores y todas las mediciones en tablas separadas, con la capacidad de filtrarlas y modificar sus datos según sea necesario.
+Esta aplicación está destinada para que sea usada por los operarios encargados de tomar las mediciones de los medidodres de agua y para el usuario administrador de la información de los medidores y las mediciones.
 
 ### Acciones de los Operarios
 - **Agregar nuevos medidores**: Guardar un nuevo medidor con las coordenadas de latitud y longitud actuales del operario.
