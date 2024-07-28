@@ -7,9 +7,9 @@
 Esta aplicación está destinada a los operarios encargados de tomar las mediciones de los medidores de agua. Los operarios pueden agregar nuevos medidores, actualizando las coordenadas de latitud y longitud donde se encuentren situados con su celular, así como actualizar las coordenadas de medidores ya instalados. Además, permite registrar las mediciones mensuales de los medidores. 
 También está destinada para que un usuario administrador pueda ver todos los medidores y todas las mediciones en tablas separadas, con la capacidad de filtrarlas y modificar sus datos según sea necesario.
 
-## Paginas
+## Pantallas
 
-__Pagina principal - Coordenadas__:
+__Coordenadas__:
 
 En la pantalla principal "Coordenadas," el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas. 
 
@@ -18,47 +18,10 @@ En la pantalla principal "Coordenadas," el usuario puede buscar un medidor filtr
 El usuario puede ver su ubicación actual en un mapa junto con la información de latitud y longitud. Al guardar un nuevo medidor, se almacenarán las coordenadas de latitud y longitud correspondientes a la ubicación actual del operario con su celular.
 <br><br>
 <img src="./src/assets/readmeMedidores/coordenadasMobile2.png">
+<img src="./src/assets/readmeMedidores/botonescoordenadas.png">
 
-__Inicio de sesión__:
 
-La pantalla de inicio de sesión permite a los usuarios existentes ingresar sus credenciales para acceder al sistema.
-Se implementan validaciones para que el usuario ingrese correctamente su correo electronico y contraseña.
-Se realiza una verificación en el servidor, donde se consulta la base de datos para confirmar la autenticidad del usuario y la correspondencia de la contraseña.
 
-__Redirección a la pantalla principal__:
-
-Una vez que el inicio de sesión se completa con éxito, el sistema redirige automáticamente al usuario a la pantalla principal. La ruta principal del proyecto varía en función del tipo de usuario:
-
-__Usuario regular__:
-Si el usuario recién registrado o que ha iniciado sesión es un usuario regular, será redirigido a la ruta principal estándar del proyecto. En esta ruta, encontrará un formulario diseñado para completar la solicitud del carnet de manipulador de alimentos. Los campos requeridos para completar el formulario son:
-
-- **Nombre**
-- **Apellido**
-- **DNI (8 dígitos)**
-- **Número de Trámite (11 dígitos)**
-- **Archivo adjunto (PDF o imagen)**
-  
-Estos campos deben ser llenados con la información correspondiente para proceder con la solicitud del carnet.
-
-__Usuario administrador__:
-Cuando el usuario posee privilegios de administrador, será redirigido a una ruta principal exclusiva. Esta ruta ha sido diseñada para presentar una tabla detallada que recopila todas las solicitudes relacionadas con el trámite del carnet de manipulador de alimentos. Dentro de esta tabla, se exhiben datos esenciales que incluyen:
-
-- **ID del Trámite**
-- **Nombre**
-- **Apellido**
-- **DNI**
-- **Número de Trámite**
-- **ID del Usuario**
-- **Nombre del Archivo**
-- **Estado de la Solicitud**
-
-Además, se proporcionan columnas adicionales que otorgan al administrador la capacidad de realizar acciones específicas. Estas columnas incluyen:
-
-- **Aceptado**
-- **Rechazado**
-- **Vencido**
-  
-Estas columnas permiten al administrador modificar el estado de las solicitudes según corresponda. En esta ruta, el administrador tiene la capacidad de aceptar, rechazar o dar por expirado cualquier trámite pendiente, facilitando así la gestión eficiente de todas las solicitudes de carnet de manipulador de alimentos.
 
 ## Instrucciones de Instalación
 
