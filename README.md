@@ -5,8 +5,22 @@
 ## Descripción
 
 Esta aplicación está destinada a los operarios encargados de tomar las mediciones de los medidores de agua. Los operarios pueden agregar nuevos medidores, actualizando las coordenadas de latitud y longitud donde se encuentren situados con su celular, así como actualizar las coordenadas de medidores ya instalados. Además, permite registrar las mediciones mensuales de los medidores. 
+
 <br><br>
-También ésta aplicación está destinada para que un usuario administrador pueda ver todos los medidores y todas las mediciones en tablas separadas, con la capacidad de filtrarlas y modificar sus datos según sea necesario.
+
+También esta aplicación está destinada para que un usuario administrador pueda ver todos los medidores y todas las mediciones en tablas separadas, con la capacidad de filtrarlas y modificar sus datos según sea necesario.
+
+### Acciones de los Operarios
+- **Agregar nuevos medidores**: Guardar un nuevo medidor con las coordenadas de latitud y longitud actuales del operario.
+- **Actualizar coordenadas de medidores existentes**: Modificar las coordenadas de latitud y longitud de medidores ya instalados usando la ubicación actual del operario.
+- **Registrar mediciones mensuales**: Ingresar y guardar las mediciones de cada medidor mes a mes.
+
+### Acciones del Administrador
+- **Visualizar medidores**: Ver una tabla con todos los medidores.
+- **Visualizar mediciones**: Ver una tabla con todas las mediciones.
+- **Filtrar datos**: Aplicar filtros para buscar medidores y mediciones específicas.
+- **Modificar datos**: Editar la información de medidores y mediciones según sea necesario.
+
 
 ## Pantallas
 
@@ -23,8 +37,6 @@ El usuario puede ver su ubicación actual en un mapa junto con la información d
 **Botones:**
 <br><br>
 <img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
-
-
 
 
 ## Instrucciones de Instalación
