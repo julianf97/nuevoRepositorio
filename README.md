@@ -33,7 +33,9 @@ El usuario puede ver su ubicación actual en un mapa junto con la información d
 **Botones:**
 <br><br>
 <img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
-
+<br><br>
+Si el usuario presiona el boton guardar coordenadas sin elegir un numero de medidor saldrá el aviso para que se seleccione un medidor antes de guardar las coordenadas:
+<img src="./src/assets/readmeMedidores/coordenadasMobileAccionNoDisponible.png">
 
 ## Instrucciones de Instalación
 
