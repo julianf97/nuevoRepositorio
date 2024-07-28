@@ -19,6 +19,7 @@ El usuario puede ver su ubicación actual en un mapa junto con la información d
 <br><br>
 <img src="./src/assets/readmeMedidores/coordenadasMobile2.png">
 <br><br>
+**Botones:**
 <img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
 
 
