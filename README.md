@@ -32,7 +32,7 @@ El usuario puede ver su ubicación actual en un mapa junto con la información d
 <br><br>
 **Boton - "Guardar coordenadas":**
 <br><br>
-<img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
+<img src="./src/assets/readmeMedidores/botonGuardarCoordenada.png">
 <br><br>
 Si el usuario presiona el boton guardar coordenadas sin elegir un numero de medidor saldrá el aviso para que se seleccione un medidor antes de guardar las coordenadas:
 <br><br>
@@ -46,9 +46,9 @@ Si presiona guardar, se actualizarán las coordenadas de ese medidor que ha sele
 <br><br>
 <img src="./src/assets/readmeMedidores/exitoCoordenadas.png">
 <br><br>
-**Boton - "Nuevo medidor":**
+**Boton - "Guardar nuevo medidor":**
 <br><br>
-<img src="./src/assets/readmeMedidores/botonesCoordenadas.png">
+<img src="./src/assets/readmeMedidores/botonNuevoMedidor.png">
 <br><br>
 
 
