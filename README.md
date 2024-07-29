@@ -83,8 +83,8 @@ Si los datos ingresados por el usuario para agregar un nuevo medidor pasan todas
 En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./src/assets/readmeMedidores/coordenadasMobile1.png" heigth=48%  width="48%">
-    <img src="./src/assets/readmeMedidores/coordenadasMobile2.png" heigth=48%  width="48%">
+    <img src="./src/assets/readmeMedidores/registroConsumos1.png" heigth=48%  width="48%">
+    <img src="./src/assets/readmeMedidores/registroConsumos2.png" heigth=48%  width="48%">
 </div>
 
 
