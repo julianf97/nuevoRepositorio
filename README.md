@@ -100,12 +100,21 @@ Debajo de la información del medidor, el usuario puede ver el ultimo registro q
 
 Por último se encuentran los inputs para poder ingresar el nuevo consumo, el primer input es para ingresar el valor del consumo, el segundo input es para ingresar observaciones si es que las encuentra, y por ultimo hay tres checkboxs que corresponden a el campo problema: **Roto** - **Trabado** - **Robado**
 
-
 <div style="display: flex; justify-content: space-between;">
     <img src="./src/assets/readmeMedidores/registroConsumos1.png" heigth=48%  width="48%">
     <img src="./src/assets/readmeMedidores/registroConsumos2.png" heigth=48%  width="48%">
 </div>
 <img src="./src/assets/readmeMedidores/registroConsumos3.png" width="48%">
+
+**EL NUEVO CONSUMO A INGRESAR NO DEBE SER MENOR AL CONSUMO ANTERIOR**
+
+Cuando se está ingresando el nuevo consumo en el input del consumo, la aplicación va detectando el valor que se está ingresando, si el valor que se está ingresando es menor al ultimo consumo registrado, debajo del input se mostrará la alerta: 
+
+**"El valor ingresado es menor al último registro."**
+
+y debajo se mostrará el consumo calculado en negativo, para advertir que este valor no puede ingresarse en la base de datos.
+
+<img src="./src/assets/readmeMedidores/consumoNoValido.png" width="48%">
 
 ## Instrucciones de Instalación
 
