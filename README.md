@@ -86,7 +86,7 @@ En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor f
     <img src="./src/assets/readmeMedidores/registroConsumos1.png" heigth=48%  width="48%">
     <img src="./src/assets/readmeMedidores/registroConsumos2.png" heigth=48%  width="48%">
 </div>
-
+<img src="./src/assets/readmeMedidores/registroConsumos3.png" width="48%">
 
 ## Instrucciones de Instalación
 
