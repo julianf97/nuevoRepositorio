@@ -80,7 +80,14 @@ Si los datos ingresados por el usuario para agregar un nuevo medidor pasan todas
 
 ### Registro de consumo
 
-En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas.
+### Función - Objetivo
+- **Registrar los consumos**: El operario puede registrar el consumo del mes de ese medidor, puede ver la información del consumo del mes anterior y visualizar el consumo calculado que es la diferencia del mes anterior con el mes actual.
+<br><br>
+En la pantalla principal **"Registro de consumo,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para cargar un nuevo consumo de ese medidor.
+<br><br>
+Una vez seleccionado el medidor, debajo del filtro para filtrar medidores podrá ver la información del medidor: **Número de medidor** - **Calle** - **Numero** - **Barrio** - **LATITUD** - **LONGITUD**
+<br><br>
+
 
 <div style="display: flex; justify-content: space-between;">
     <img src="./src/assets/readmeMedidores/registroConsumos1.png" heigth=48%  width="48%">
