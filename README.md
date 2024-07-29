@@ -98,6 +98,7 @@ Debajo de la información del medidor, el usuario puede ver el ultimo registro q
 - **Problema registrado**: Muestra el problema registrado del ultimo registro si es que lo hay.
 - **Observaciones**: Muestra las observaciones registradas del ultimo registro si es que las hay
 
+Por último se encuentran los inputs para poder ingresar el nuevo consumo, el primer input es para ingresar el valor del consumo, el segundo input es para ingresar observaciones si es que las encuentra, y por ultimo hay tres checkboxs que corresponden a el campo problema: **Roto** - **Trabado** - **Robado**
 
 
 <div style="display: flex; justify-content: space-between;">
