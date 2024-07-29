@@ -1,10 +1,10 @@
 # SN | Medidores de agua
 
-<img src="./src/assets/readmeMedidores/firstImage.png">
+<img src="./src/assets/readmeMedidores/firstImage.png" width="100%">
 
 ## Descripción
 
-La aplicación está destinada para que sea usada por los operarios encargados de tomar las mediciones de los medidodres de agua y para el usuario administrador de la información de los medidores y las mediciones.
+La aplicación está destinada para que sea usada por los operarios encargados de tomar las mediciones de los medidores de agua y para el usuario administrador de la información de los medidores y las mediciones.
 
 ### Acciones de los Operarios
 - **Agregar nuevos medidores**: Guardar un nuevo medidor con las coordenadas de latitud y longitud actuales del operario.
@@ -17,59 +17,65 @@ La aplicación está destinada para que sea usada por los operarios encargados d
 - **Filtrar datos**: Aplicar filtros para buscar medidores y mediciones específicas.
 - **Modificar datos**: Editar la información de medidores y mediciones según sea necesario.
 
-
 ## Pantallas
 
-__Coordenadas__:
+### Coordenadas
 
-En la pantalla principal "Coordenadas," el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas. 
+En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas.
 
-<img src="./src/assets/readmeMedidores/coordenadasMobile1.png">
+<div style="display: flex; justify-content: space-between;">
+    <img src="./src/assets/readmeMedidores/coordenadasMobile1.png"  width="48%">
+    <img src="./src/assets/readmeMedidores/coordenadasMobile2.png"  width="48%">
+</div>
 
 El usuario puede ver su ubicación actual en un mapa junto con la información de latitud y longitud. Al guardar un nuevo medidor, se almacenarán las coordenadas de latitud y longitud correspondientes a la ubicación actual del operario con su celular.
-<br><br>
-<img src="./src/assets/readmeMedidores/coordenadasMobile2.png">
-<br><br>
-**Boton - "Guardar coordenadas":**
-<br><br>
-<img src="./src/assets/readmeMedidores/botonGuardarCoordenada.png">
-<br><br>
-Si el usuario presiona el boton guardar coordenadas sin elegir un numero de medidor saldrá el aviso para que se seleccione un medidor antes de guardar las coordenadas:
-<br><br>
-<img src="./src/assets/readmeMedidores/coordenadasMobileAccionNoDisponible.png">
-<br><br>
-Cuando el usuario ya ha seleccionado un medidor y presiona en guardar coordenadas, le saldrá el modal con la información de su latitud y longitud donde está situado que serán los nuevos datos de ubicación del medidor que ha seleccionado: 
-<br><br>
-<img src="./src/assets/readmeMedidores/nuevasCoordenadas.png">
-<br><br>
+
+
+
+#### Botón - "Guardar coordenadas"
+
+<img src="./src/assets/readmeMedidores/botonGuardarCoordenada.png" width="30%">
+
+Si el usuario presiona el botón guardar coordenadas sin elegir un número de medidor, saldrá el aviso para que se seleccione un medidor antes de guardar las coordenadas:
+
+<img src="./src/assets/readmeMedidores/coordenadasMobileAccionNoDisponible.png" width="30%">
+
+Cuando el usuario ya ha seleccionado un medidor y presiona en guardar coordenadas, le saldrá el modal con la información de su latitud y longitud donde está situado que serán los nuevos datos de ubicación del medidor que ha seleccionado:
+
+<img src="./src/assets/readmeMedidores/nuevasCoordenadas.png" width="30%">
+
 Si presiona guardar, y si estas coordenadas donde está situado el operario con su celular ya existen en la base de datos, no podrá actualizar las coordenadas del medidor seleccionado y le saldrá el modal de error:
-<br><br>
-<img src="./src/assets/readmeMedidores/coordenadaExisteAlActualizarCoordenadas.png">
-<br><br>
+
+<img src="./src/assets/readmeMedidores/coordenadaExisteAlActualizarCoordenadas.png" width="30%">
+
 Si presiona guardar, y las coordenadas no existen en la base de datos se actualizarán las coordenadas de ese medidor que ha seleccionado cambiando la latitud y longitud que tenía anteriormente por la latitud y la longitud que tenga el operario de donde esté usando la aplicación desde su celular.
-<br><br>
-<img src="./src/assets/readmeMedidores/exitoCoordenadas.png">
-<br><br>
-**Boton - "Guardar nuevo medidor":**
-<br><br>
-<img src="./src/assets/readmeMedidores/botonNuevoMedidor.png">
-<br><br>
-Cuando el usuario presiona guardar nuevo medidor se le abrirá el modal donde le pide ingresar la calle, numero, barrio y numero de medidor, estos campos son obligatorios, también hay un checkbox para indicar si la calle es BIS
-<br><br>
-<img src="./src/assets/readmeMedidores/modalNuevoMedidor.png">
-<br><br>
-Si el usuario al ingresar los datos, ingresa un numero de medidor que ya existe en la base de datos le saldrá la alerta de error: 
-<br><br>
-<img src="./src/assets/readmeMedidores/medidorExistente.png">
-<br><br>
-Si el usuario al ingresar los datos, intenta ingresar desde una coordenada ya registrada, le saldrá la alerta de error: 
-<br><br>
-<img src="./src/assets/readmeMedidores/coordenadaExistenteNuevoMedidor.png">
-<br><br>
-Si el usuario al ingresar los datos, intenta ingresar un domicilio ya registrado (misma calle, numero y barrio), le saldrá la alerta de error: 
-<br><br>
-<img src="./src/assets/readmeMedidores/domicilioExistente.png">
-<br><br>
+
+<img src="./src/assets/readmeMedidores/exitoCoordenadas.png" width="30%">
+
+#### Botón - "Guardar nuevo medidor"
+
+<img src="./src/assets/readmeMedidores/botonNuevoMedidor.png" width="30%">
+
+Cuando el usuario presiona guardar nuevo medidor, se le abrirá el modal donde le pide ingresar la calle, número, barrio y número de medidor. Estos campos son obligatorios, también hay un checkbox para indicar si la calle es BIS.
+
+<img src="./src/assets/readmeMedidores/modalNuevoMedidor.png" width="30%">
+
+Si el usuario al ingresar los datos, ingresa un número de medidor que ya existe en la base de datos, le saldrá la alerta de error:
+
+<img src="./src/assets/readmeMedidores/medidorExistente.png" width="30%">
+
+Si el usuario al ingresar los datos, intenta ingresar desde una coordenada ya registrada, le saldrá la alerta de error:
+
+<img src="./src/assets/readmeMedidores/coordenadaExistenteNuevoMedidor.png" width="30%">
+
+Si el usuario al ingresar los datos, intenta ingresar un domicilio ya registrado (misma calle, número y barrio), le saldrá la alerta de error:
+
+<img src="./src/assets/readmeMedidores/domicilioExistente.png" width="30%">
+
+Si los datos ingresados por el usuario para agregar un nuevo medidor pasan todas las validaciones, es decir, no hay ningún problema y son datos válidos, entonces saldrá el modal que indica que el medidor ha sido agregado con éxito:
+
+<img src="./src/assets/readmeMedidores/medidorGuardado.png" width="30%">
+
 
 ## Instrucciones de Instalación
 
