@@ -95,8 +95,8 @@ Debajo de la información del medidor, el usuario puede ver el ultimo registro q
 - **Mes**: Muestra el mes del último registro.
 - **Consumo Anterior**: Muestra el consumo ingresado en el último registro.
 - **Consumo Calculado(diferencia anterior):**: Muestra el consumo calculado del mes del ultimo registro con el mes anterior. Por ejemplo en la imagen se muestra JUNIO, entonces el consumo calculado es del mes de JUNIO menos el consumo del mes de ABRIL.
-- **PROBLEMA REGISTRADO**: Muestra el problema registrado del ultimo registro si es que lo hay.
-- **PROBLEMA REGISTRADO**: Muestra las observaciones registradas del ultimo registro si es que las hay
+- **Problema registrado**: Muestra el problema registrado del ultimo registro si es que lo hay.
+- **Observaciones**: Muestra las observaciones registradas del ultimo registro si es que las hay
 
 
 
