@@ -88,6 +88,13 @@ En la pantalla principal **"Registro de consumo,"** el usuario puede buscar un m
 
 Una vez seleccionado el medidor, debajo del filtro para filtrar medidores podrá ver la información del medidor: **Número de medidor** - **Calle** - **Numero** - **Barrio** - **LATITUD** - **LONGITUD**.
 
+Debajo de la información del medidor, el usuario puede ver el ultimo registro que se ha ingresado en ese medidor, es decir el ultimo consumo tomado para ese medidor, la información del ultimo consumo se muestra por: **Mes** - **Consumo Anterior** - **Consumo Calculado(diferencia anterior)** - **PROBLEMA REGISTRADO** - **OBSERVACIONES**.
+<br><br>
+- **Mes**: Muestra el mes del último registro.
+- **Consumo Anterior**: Muestra el consumo ingresado en el último registro.
+- **Consumo Calculado(diferencia anterior):**: Muestra el consumo calculado del mes del ultimo registro con el mes anterior. Por ejemplo en la imagen se muestra JUNIO, entonces el consumo calculado es del mes de JUNIO menos el consumo del mes de ABRIL.
+- **PROBLEMA REGISTRADO**: Muestra el problema registrado del ultimo registro si es que lo hay.
+- **PROBLEMA REGISTRADO**: Muestra las observaciones registradas del ultimo registro si es que las hay
 
 
 
