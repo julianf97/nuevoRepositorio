@@ -66,7 +66,10 @@ Si el usuario al ingresar los datos, intenta ingresar desde una coordenada ya re
 <br><br>
 <img src="./src/assets/readmeMedidores/coordenadaExistenteNuevoMedidor.png">
 <br><br>
-
+Si el usuario al ingresar los datos, intenta ingresar un domicilio ya registrado (misma calle, numero y barrio), le saldrá la alerta de error: 
+<br><br>
+<img src="./src/assets/readmeMedidores/domicilioExistente.png">
+<br><br>
 
 ## Instrucciones de Instalación
 
