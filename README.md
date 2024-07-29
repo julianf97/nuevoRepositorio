@@ -26,6 +26,7 @@ La aplicación está destinada para que sea usada por los operarios encargados d
 - **Guardar nuevo medidor**: El operario puede guardar un nuevo medidor con las coordenadas de su ubicación actual al momento de la creación. Las coordenadas de latitud y longitud se registrarán automáticamente según la posición del operario al guardar el nuevo medidor.
 
 En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas.
+
 El usuario puede ver su ubicación actual en un mapa junto con la información de latitud y longitud. Al guardar un nuevo medidor, se almacenarán las coordenadas de latitud y longitud correspondientes a la ubicación actual del operario con su celular.
 
 <div style="display: flex; justify-content: space-between;">
