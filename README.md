@@ -62,6 +62,10 @@ Si el usuario al ingresar los datos, ingresa un numero de medidor que ya existe 
 <br><br>
 <img src="./src/assets/readmeMedidores/medidorExistente.png">
 <br><br>
+Si el usuario al ingresar los datos, intenta ingresar desde una coordenada ya registrada, le saldrá la alerta de error: 
+<br><br>
+<img src="./src/assets/readmeMedidores/coordenadaExistenteNuevoMedidor.png">
+<br><br>
 
 
 ## Instrucciones de Instalación
