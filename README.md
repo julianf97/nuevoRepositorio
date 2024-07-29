@@ -116,6 +116,8 @@ Cuando se está ingresando el nuevo consumo en el input del consumo, la aplicaci
 
 y debajo se mostrará el consumo calculado en negativo, para advertir que este valor no puede ingresarse en la base de datos.
 
+Además se deshabilita el botón para registrar el nuevo consumo, el botón deja de ser clickeable y el texto dentro del botón cambia de **"Registrar consumo"** a **"Consumo no válido"**
+
 <img src="./src/assets/readmeMedidores/consumoNoValido.png" width="48%">
 
 ## Instrucciones de Instalación
