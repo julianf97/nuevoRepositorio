@@ -70,6 +70,14 @@ Si el usuario al ingresar los datos, intenta ingresar un domicilio ya registrado
 <br><br>
 <img src="./src/assets/readmeMedidores/domicilioExistente.png">
 <br><br>
+Si el usuario al ingresar los datos, intenta ingresar un domicilio ya registrado (misma calle, numero y barrio), le saldrá la alerta de error: 
+<br><br>
+<img src="./src/assets/readmeMedidores/domicilioExistente.png">
+<br><br>
+Si los datos ingresados por el usuario para agregar un nuevo medidor pasan todas las validaciones, es decir no hay ningún problema y son datos validos, entonces saldrá el modal que indica que el medidor ha sido agregado con éxito: 
+<br><br>
+<img src="./src/assets/readmeMedidores/medidorGuardado.png">
+<br><br>
 
 ## Instrucciones de Instalación
 
