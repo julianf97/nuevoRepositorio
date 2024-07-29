@@ -106,6 +106,8 @@ Por último se encuentran los inputs para poder ingresar el nuevo consumo, el pr
 </div>
 <img src="./src/assets/readmeMedidores/registroConsumos3.png" width="48%">
 
+
+
 **EL NUEVO CONSUMO A INGRESAR NO DEBE SER MENOR AL CONSUMO ANTERIOR**
 
 Cuando se está ingresando el nuevo consumo en el input del consumo, la aplicación va detectando el valor que se está ingresando, si el valor que se está ingresando es menor al ultimo consumo registrado, debajo del input se mostrará la alerta: 
