@@ -21,6 +21,10 @@ La aplicación está destinada para que sea usada por los operarios encargados d
 
 ### Coordenadas
 
+### Función - Objetivo
+- **Actualizar coordenadas**: El operario puede actualizar las coordenadas de un medidor ya registrado en la base de datos. Las coordenadas guardadas serán la latitud y longitud actuales del operario, dependiendo de su ubicación en el momento de la actualización.
+- **Guardar nuevo medidor**: El operario puede guardar un nuevo medidor con las coordenadas de su ubicación actual al momento de la creación. Las coordenadas de latitud y longitud se registrarán automáticamente según la posición del operario al guardar el nuevo medidor.
+
 En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas.
 
 <div style="display: flex; justify-content: space-between;">
@@ -75,6 +79,15 @@ Si el usuario al ingresar los datos, intenta ingresar un domicilio ya registrado
 Si los datos ingresados por el usuario para agregar un nuevo medidor pasan todas las validaciones, es decir, no hay ningún problema y son datos válidos, entonces saldrá el modal que indica que el medidor ha sido agregado con éxito:
 
 <img src="./src/assets/readmeMedidores/medidorGuardado.png" width="30%">
+
+### Registro de consumo
+
+En la pantalla principal **"Coordenadas,"** el usuario puede buscar un medidor filtrándolo por calle, número, barrio y número de medidor para actualizar sus coordenadas.
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./src/assets/readmeMedidores/coordenadasMobile1.png" heigth=48%  width="48%">
+    <img src="./src/assets/readmeMedidores/coordenadasMobile2.png" heigth=48%  width="48%">
+</div>
 
 
 ## Instrucciones de Instalación
