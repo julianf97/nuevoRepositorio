@@ -58,6 +58,10 @@ Cuando el usuario presiona guardar nuevo medidor se le abrirá el modal donde le
 <br><br>
 <img src="./src/assets/readmeMedidores/modalNuevoMedidor.png">
 <br><br>
+Si el usuario al ingresar los datos, ingresa un numero de medidor que ya existe en la base de datos le saldrá la alerta de error: 
+<br><br>
+<img src="./src/assets/readmeMedidores/medidorExistente.png">
+<br><br>
 
 
 ## Instrucciones de Instalación
