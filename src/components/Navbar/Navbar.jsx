@@ -128,14 +128,6 @@ export default function Navbar() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                onClick={() => handleClick("about")}
-              >
-                <Link to="/">About</Link>
-              </motion.li>
-              <motion.li
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 1 }}
                 onClick={() => handleClick("blog")}
               >
                 <Link to="/">Blog</Link>

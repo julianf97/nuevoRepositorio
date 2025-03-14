@@ -10,21 +10,6 @@ import coloCossyScreen from "../../public/screensProyect/screenColoCossy.png";
 
 export const arrayProjectsPage = [
   {
-    id: "mercadoLibre",
-    title: "Buscador Mercado Libre", 
-    titleENG: "Mercado Libre Search Engine",
-    image: mercadoLibreScreen,
-    deployLink: "https://julian-merc-libre.vercel.app/",
-    serverLink: "https://server-julianstore.onrender.com/",
-    technologies: ["ReactTag", "JavascriptTag", "ExpressTag", "NodeTag", "StyledComponentsTag"],
-    stack: "fullstack",
-    tecnologiesandfeatures: ["React", "Node js", "Express", "Javascript", "Styled Components"],
-    description: "Este proyecto es la resolución de un desafío técnico de Mercado Libre que encontré en la web, éste proyecto puso a prueba mis conocimientos ya que se requieren conocimientos tanto de front end como de back end, para poder resolverlo hay que consumir la información de la API de Mercado Libre, en el caso de éste proyecto en particular los estilos se los agregué con Styled Componentes, es una librería de Javascript que permite agregar los estilos como una constante y exportarla directamente a los componentes de React.",
-    descriptionENG: "This project is the solution to a technical challenge from Mercado Libre that I found online. It put my skills to the test as it required knowledge of both front-end and back-end development. To solve it, I had to consume data from the Mercado Libre API. In the case of this particular project, I added styles using Styled Components, a JavaScript library that allows styling to be added as constants and exported directly to React components.",
-    urlYoutube: "https://www.youtube.com/embed/mUtDxxb85Uk?si=jTm1K8mX84N1XYMb",
-    alert: true
-  },
-  {
     id: "finellitattoos",
     title: "Sr.Finelli Tattoos",
     titleENG: "Sr.Finelli Tattoos",

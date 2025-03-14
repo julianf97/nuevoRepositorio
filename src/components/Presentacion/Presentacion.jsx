@@ -107,7 +107,7 @@ export default function Presentacion() {
             </div>
           </motion.div>
         </div>
-        <div className="contenedorImgPresentacion">
+        <div className="contenedorImgPresentacion ">
           <motion.div
             className="cardImgPresentacion"
             initial={{ x: "10vw", opacity: 0 }}
