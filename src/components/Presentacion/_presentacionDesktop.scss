@@ -178,10 +178,12 @@
                 text-align: center;
                 img{
                     margin-left: 100px;
+                    border-radius: 2%;
                     @media (min-width: 1900px) { 
                         width: 90%;
                         margin-left: 80px;
                         height: 90%;
+                        border-radius: 2%;
                     }
                     width: 70%;
                     height: 70%;
