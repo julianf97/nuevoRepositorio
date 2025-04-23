@@ -49,3 +49,31 @@ button {
      -moz-user-select: none;
       -ms-user-select: none;
 }
+
+
+.construccion {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.construccion h1 {
+  color: rgb(0, 0, 0);
+}
+
+.fotoRobot {
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+
+.fotoRobot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
